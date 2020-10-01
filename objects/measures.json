@@ -1,0 +1,2311 @@
+[
+  {
+    "qInfo": {
+      "qId": "16ef02b2-728d-4e8a-8039-ca79c5c6113b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBIT_Budget_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"94*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-OIAL-FRC*\"},BudgetModel={\"Budget\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBIT_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "291fd489-7425-48e8-9ecd-31bb04da9a93",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "v_Ledger6789 YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n )*-1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "v_Ledger6789 YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "2dc9d03c-2da9-4083-b508-c42d209ad907",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Expenses_PY_Ratio_YTD",
+      "qDef": "( sum({$<ACCOUNTNUM={\"91*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n/\n   sum({$<ACCOUNTNUM={\"91*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n)*100",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Expenses_PY_Ratio_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "34ad88fd-71cf-4464-900d-0a6f75c8420e",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Earnings_YTD_PY",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n )*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Net Earnings_YTD_PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "3a0d18fe-4fb2-4d33-8500-d45ab5082e7c",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBIT_PY",
+      "qDef": "\n\n  \n  \n( (sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"94*\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1)\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBIT_PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "48cb680f-3426-4f64-a3a3-4c6bc032fbe2",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_Budget",
+      "qDef": "( (sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)))\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n  \n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_Budget",
+      "description": "EBIDTA",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "4e3c3a28-c5cc-4856-9a9c-489e71abab5c",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Expenses_PY_YTD",
+      "qDef": " sum({$<ACCOUNTNUM={\"91*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Expenses_PY_YTD",
+      "description": "91",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "568c595f-fd56-4c65-bb1c-14dfe0f2889b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBIT_YTD_PY",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"94*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n -\n  Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBIT_YTD_PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "69504559-94fe-492c-98e8-b22ada603061",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_Total_S_H_Equity_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"511*\",\"531*\",\"541002\",\"570001\",\"52*\",\"55*\",\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n )*-1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_Total_S_H_Equity_YTD",
+      "description": "Total Share Holder Equity",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "6ee0a860-b19d-448a-bac6-035d0d5e9e03",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Earnings_Budget",
+      "qDef": " sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n\n\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Net Earnings_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "79374b39-dcc4-47fc-a3df-e3a7e6be546b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "DTE Fin. Leverage",
+      "qDef": "\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"411*\",\"412*\",\"421*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1\n /\n \n $(F_Total_S_H_Equity_YTD)\n\n\n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "DTE Fin. Leverage",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "87dde67f-5b3d-40b1-9ec9-df5e09b903d7",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Earnings_Budget_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n )\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Net Earnings_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "8e53c358-a531-408d-841b-e3c3d308d0c1",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ROE",
+      "qDef": "$(v_ROE)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "ROE",
+      "description": "F_ROE",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "93d3db5e-c437-4e76-ac43-25d7aaca6d27",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ExpensesBudget_Ratio_YTD",
+      "qDef": "( sum({$<ACCOUNTNUM={\"91*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n/\n  sum({$<ACCOUNTNUM={\"91*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1)*100",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "ExpensesBudget_Ratio_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BFKDYs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Working Capital",
+      "qDef": "($(v_Total_Current_Assets)) - ($(v_F_TotalCurrentLiabilities)  - $(v_F_Affiliates_N))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Working Capital",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BaPDnrH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation",
+      "qDef": "$(v_Depreciation)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Depreciation",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BtyxRC",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "CCC",
+      "qDef": "$(v_CCC)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "CCC",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BzdcBpd",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Earnings_PY",
+      "qDef": "( (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"},  [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n )*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))\n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Net Earnings_PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "CNYPqNx",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Gross Sales L3M Avg",
+      "qDef": "$(v_Gross_Sales_L3M_Avg)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Gross Sales L3M Avg",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "DFqMmJg",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Total Non Current Assets",
+      "qDef": "$(v_Total_Non_Current_Assets_BS)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Total Non Current Assets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "EREhtUc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Sales YTD",
+      "qDef": "$(v_Net_Sales_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Net Sales YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "EUUrMT",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contribution_Budget_YTD",
+      "qDef": "$(v_Contribution_Budget_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Contribution_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FHfjTZ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Equity_And_SHE",
+      "qDef": "$(v_Total_Liabilities_And_SHE)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Equity_And_SHE",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FzsW",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_vs_Budget",
+      "qDef": "(( ((sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1)\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n\n)\n  \n  \n  /\n  \n\n\n\n( ((sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)))\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n\n))*100\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_vs_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HFDcJt",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Current_Ratio",
+      "qDef": "($(v_Total_Current_Assets)) / ($(v_F_TotalCurrentLiabilities)  - $(v_F_Affiliates_N))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Current_Ratio",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HbPdTR",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Capital",
+      "qDef": "$(v_Capital)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Capital",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HyASew",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FinancialCharges_Budget",
+      "qDef": "$(v_FinancialCharges_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "FinancialCharges_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JACsjut",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation_Budget_YTD",
+      "qDef": "$(v_Depreciation_Budget_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Depreciation_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Jcjus",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Liabilities_Budget",
+      "qDef": "$(v_Total_Liabilities_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Liabilities_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JqnUPEa",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Debt To EBITDA",
+      "qDef": "($(v_F_TotalLiabilities) - $(v_F_Affiliates_N)) /  $(EBITDA_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Debt To EBITDA",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JxWDch",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Sales_PY_YTD",
+      "qDef": "$(v_NetSales_PY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Net Sales_PY_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KBukMPH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Inventories",
+      "qDef": "$(v_Inventories_BS)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Inventories",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KKkRU",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation_Budget",
+      "qDef": "$(v_Depreciation_Budget)\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Depreciation_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KRLKdpB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Earnings_Actual",
+      "qDef": " sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1\n \n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n\n\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Net Earnings_Actual",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KrRNYy",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBIT_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"94*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n -\n  Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBIT_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KrZJbB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Total Payables",
+      "qDef": "$(v_TotalPayables)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Total Payables",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KtsyTJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Assets",
+      "qDef": "$(v_Assets)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Assets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MdjdKL",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Assets",
+      "qDef": "$(v_Assets)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Assets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MsqYU",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Trade Receivables",
+      "qDef": "$(v_Trade_Receivables)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Trade Receivables",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MwaGPtg",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_PY",
+      "qDef": "( (sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1)\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "NLLm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Affiliates Negative",
+      "qDef": "$(v_F_Affiliates_N)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Affiliates Negative",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "NxVJER",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ExpensesBudget",
+      "qDef": " sum({$<ACCOUNTNUM={\"91*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "ExpensesBudget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PmGs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Sales",
+      "qDef": "$(v_Net_Sales)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Net Sales",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PphgMs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FinancialCharges_PY",
+      "qDef": " $(v_FinancialCharges_PY)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "FinancialCharges_PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PuGPzfB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contribution PY",
+      "qDef": "$(v_Contribution_PY)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Contribution PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PwLu",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Gross Sales L3M",
+      "qDef": "$(v_Gross_Sales_L3M)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Gross Sales L3M",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "QsJhYS",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "P&L This Year",
+      "qDef": "$(v_PL_this_year)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "P&L This Year",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RvMuFq",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contribution",
+      "qDef": "$(v_Contribution)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Contribution",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SBJWeDT",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_Actual",
+      "qDef": "( (sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1)\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_Actual",
+      "description": "EBIDTA",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SCzeb",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "v_Ledger_Amount",
+      "qDef": "sum(LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "v_Ledger_Amount",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SHZrCQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_TotalLiabilities",
+      "qDef": "$(v_F_TotalLiabilities) - $(v_F_Affiliates_N)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_TotalLiabilities",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SgENGjH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Liabilities_And_SHE_Budget",
+      "qDef": "$(v_Total_Liabilities_And_SHE_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Liabilities_And_SHE_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SpNPJa",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Prep. Exp & Others",
+      "qDef": "$(v_Prepaid_Exp_Others)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Prep. Exp & Others",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SxsJWbm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_Affiliates_P",
+      "qDef": "SUM(\n Aggr(if(Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"414001\",\"414002\",\"414003\",\"415001\",\"415002\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)>0, Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},\n ACCOUNTNUM={\"414001\",\"414002\",\"414003\",\"415001\",\"415002\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY) ,0),[BU NAME],ACCOUNTNUM,Purpose)) ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_Affiliates_P",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "VXzwVap",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FinancialCharges_Budget_YTD",
+      "qDef": " $(v_FinancialCharges_Budget_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "FinancialCharges_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "WjKbTj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Non_Current_Liabilities",
+      "qDef": "$(v_Total_Non_Current_Liabilities)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Non_Current_Liabilities",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "WnDmsSj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Provision EOSI",
+      "qDef": "$(v_Provision_EOSI)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Provision EOSI",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "XWWK",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Equity_Budget",
+      "qDef": "$(v_Share_Holders_Equity_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Equity_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "YPQvcar",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Non_Current_Assets",
+      "qDef": "$(v_Total_Non_Current_Assets_BS)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Non_Current_Assets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "YQUevY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Total Current Assets BS",
+      "qDef": "$(v_Total_Current_Assets)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Total Current Assets BS",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "YmAdqp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Cash And Banks Budget",
+      "qDef": "$(v_Cash_And_Banks_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Cash And Banks Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ZUFSPcM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Total Trade Receivables Budget",
+      "qDef": "$(v_Total_Receivables_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Total Trade Receivables Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ZWcNFh",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Financial Charges YTD",
+      "qDef": "$(v_Financial_Charges_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Financial Charges YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ZgRh",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "NetSales_Budget_YTD",
+      "qDef": "$(v_NetSales_Budget_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "NetSales_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "aFztPB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "DPO",
+      "qDef": "$(v_DPO)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "DPO",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b7dc7b9c-78b6-4968-8437-d6d1274ab608",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Earnings_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n )*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Net Earnings_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b8c514f5-addb-4373-a1c2-64fd3b5d4d0b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ExpensesBudget_YTD",
+      "qDef": " sum({$<ACCOUNTNUM={\"91*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1\n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "ExpensesBudget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "bGELjf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation PY",
+      "qDef": " $(v_Depreciation_PY)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Depreciation PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c21b5e1d-0e63-4ee5-84c0-4ed8ac0562c4",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBIT_Budget",
+      "qDef": "( (sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  sum({<ACCOUNTNUM={\"94*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)))\n  +\nsum({<ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n-\nsum({<ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Budget\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n  \n  \n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBIT_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c556fb2b-7890-4744-9cf7-f9042de0088e",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "v_LedgerAmount_YTD",
+      "qDef": " Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "v_LedgerAmount_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "cc98bebb-2ac7-458f-b26f-5f60b5b36fde",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ExpensesActual_YTD",
+      "qDef": " sum({$<ACCOUNTNUM={\"91*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n\n\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "ExpensesActual_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "cpvkPc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_TotalCurrentAssets",
+      "qDef": "Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"141*\",\"417008*\",\"151*\",\"131*\",\"16*\",\"114*\",\"172001*\",\"172002*\",\"173001*\",\"173002*\",\"111*\",\"112*\",\"113*\",\"12*\",\"31*\",\"561001*\",\"171*\",\"321*\",\"445001*\",\"445002*\",\"445003*\",\n\"445004*\",\"445007*\",\"445009*\",\"445010*\",\"445012*\",\"456001*\",\"456002*\",\"456003*\",\"456004*\",\"571001\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_TotalCurrentAssets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "d1535fb2-499f-447f-bdfa-f9d2ea1ba2d5",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Expenses_PY_Ratio",
+      "qDef": "( sum({$<ACCOUNTNUM={\"91*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n/\n  sum({$<ACCOUNTNUM={\"91*\"},[Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n)*100",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Expenses_PY_Ratio",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "d4ec1f93-5ab7-4cff-a184-47877b795770",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Expenses_PY",
+      "qDef": " sum({$<ACCOUNTNUM={\"91*\"},[Month ID] = {$(v_Max_Month_ID_LY)}, Year = , Quarter=, Month=, [Month Year]=>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Expenses_PY",
+      "description": "91",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dfCRR",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ROE Budget",
+      "qDef": "$(v_ROE_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "ROE Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dheFH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Statutory Reserve",
+      "qDef": "$(v_Statutory_Reserve)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Statutory Reserve",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "djnSANJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Retained Earnings",
+      "qDef": "$(v_Retained_Earnings)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Retained Earnings",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e20d2672-d98a-432b-9077-53348f0cfebf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_Budget_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Budget\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n \n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_Budget_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "eDdyCwm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation BS",
+      "qDef": "$(v_Depreciation_BS)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Depreciation BS",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "eujs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Debt To Equity",
+      "qDef": "$(v_TotalCurrentLiabilities) / $(F_Total_S_H_Equity_YTD)\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Debt To Equity",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "fFAMkzU",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Banks - Liab",
+      "qDef": "$(v_Bank_Short_Term_Loans)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Banks - Liab",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "fc4cb97b-177d-4539-98d5-ac9668abc8bc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_YTD _PY",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"}, [Month ID] = {\"<=$(v_Max_Month_ID_LY)\"}, Year = {$(v_Max_Year_LY)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n \n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_YTD _PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "fvpk",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Sales Budget",
+      "qDef": "$(v_NetSales_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Net Sales Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "gcujKW",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ROCE",
+      "qDef": "(\r\n  \n(Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"} ,[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year =  , Quarter=, Month=, [Month Year]=>} \nLEDGERAMOUNTMST*[Currency Average Rate])\n \n -\n Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={\"941002*\"}, Year =  , Quarter=, Month=, [Month Year]=>} \nLEDGERAMOUNTMST*[Currency Average Rate])\n \n )*-1\n \n +\n \n Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},\n BudgetModel={\"Ext.Table\"},Year =  , Quarter=, Month=, [Month Year]=>} \nBudgetAmountMst*[Currency Average Rate])\n -\n  Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"},Year =  , Quarter=, Month=, [Month Year]=>} \nBudgetAmountMst*[Currency Average Rate]))\n \n \n /\n \n ($(F_Total_S_H_Equity_YTD) - Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={\"421*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \nLEDGERAMOUNTMST*[Currency Average Rate]))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ROCE",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "gkMQaN",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_Return_On_Equity",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1\n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))\n \n \n /\n \n $(F_Total_S_H_Equity_YTD)\n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_Return_On_Equity",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "hZdkm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Liabilities",
+      "qDef": "$(v_F_TotalLiabilities) - $(v_F_Affiliates_N)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Liabilities",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "hbstfM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_InterDivisionAccounts",
+      "qDef": "sum({<ACCOUNTNUM={\"E-INTER-CT\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n  \n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "F_InterDivisionAccounts",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "hmHKD",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Trade Creditors Payabales - Liab",
+      "qDef": "$(v_Trade_Creditors_Payables)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Trade Creditors Payabales - Liab",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "hpJm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_TotalCurrentLiabilities",
+      "qDef": "$(v_F_TotalCurrentLiabilities)  - $(v_F_Affiliates_N)\n \n\n\n\n  \n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_TotalCurrentLiabilities",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jNJLJnC",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Current_Assets",
+      "qDef": "$(v_Total_Current_Assets)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "BS_Current_Assets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jPQTJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Cost of Sales L3M Avg",
+      "qDef": "$(v_Cost_Of_Sales_L3M_Avg)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Cost of Sales L3M Avg",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jYTFahE",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation YTD",
+      "qDef": "$(v_Depreciation_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Depreciation YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jYkHz",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Expenses_Actual",
+      "qDef": " sum({$<ACCOUNTNUM={\"91*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Expenses_Actual",
+      "description": "91",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jZaVpJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Accrued Expenses - Liab",
+      "qDef": "$(v_Accrued_Expenses)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Accrued Expenses - Liab",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "kXqza",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Non_Current_Liabilities_Budget",
+      "qDef": "$(v_Total_Non_Current_Liabilities_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Non_Current_Liabilities_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "kamp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Current_Liabilities_Budget",
+      "qDef": "$(v_F_TotalCurrentLiabilities_Budget) - $(v_F_Affiliates_N_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "BS_Current_Liabilities_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "khmGJLQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Fixes Assets",
+      "qDef": "$(v_Fixes_Assets_At_Cost)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Fixes Assets",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "kzKp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Financial Charges",
+      "qDef": "$(v_Financial_Charges)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Financial Charges",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mPgYqg",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "v_Ledger6789",
+      "qDef": " sum({<ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "v_Ledger6789",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mdfRE",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "DSO",
+      "qDef": "$(v_DSO)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "DSO",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "nCXZccU",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBITDA_YTD",
+      "qDef": " (Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"92*\",\"93*\",\"94*\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY))*-1\n \n +\n \n Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n -\n  Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n \n \n \n\n \n ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBITDA_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "njvJj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "F_Affiliates_N",
+      "qDef": "SUM(\n Aggr(if(Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"414001\",\"414002\",\"414003\",\"415001\",\"415002\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)<0, Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},\n ACCOUNTNUM={\"414001\",\"414002\",\"414003\",\"415001\",\"415002\"}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY) ,0),[BU NAME],ACCOUNTNUM,Purpose)) ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "F_Affiliates_N",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pGBhe",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contribution YTD",
+      "qDef": "$(v_Contribution_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Contribution YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pJGjEr",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "DIO",
+      "qDef": "$(v_DIO)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "DIO",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pKRAATr",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "v_Budget_Amount",
+      "qDef": "sum(BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "v_Budget_Amount",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pRPzZa",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Assets_Budget",
+      "qDef": "$(v_Assets_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Assets_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pTLeFyk",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Current_Liabilities",
+      "qDef": "$(v_F_TotalCurrentLiabilities)  - $(v_F_Affiliates_N)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Current_Liabilities",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "phfKanj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contribution_Budget",
+      "qDef": "$(v_Contribution_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Contribution_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pjqpRM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "HeadOffice Account",
+      "qDef": "$(v_HeadOfficeAccount)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "HeadOffice Account",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pmzJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Current_Assets_Budget",
+      "qDef": "$(v_Total_Current_Assets_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "BS_Current_Assets_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ppJZYPs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Medium Term Loans",
+      "qDef": "$(v_Medium_Term_Loans)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Medium Term Loans",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pqqbK",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "v_Bud_vs_Ledg_%",
+      "qDef": "(v_Ledger_Amount-v_Budget_Amount)/v_Budget_Amount",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "v_Bud_vs_Ledg_%",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "qBpsvpG",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Net Sales  PY",
+      "qDef": "$(v_NetSales_PY)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Net Sales  PY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "qnYkpqX",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contribution_PY_YTD",
+      "qDef": "$(Contribution_PY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Contribution_PY_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "snYJnwj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Non_Current_Assets_Budget",
+      "qDef": "$(v_Total_Non_Current_Assets_BS_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Non_Current_Assets_Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "umPtYB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Expenses_Budget_Ratio",
+      "qDef": "( sum({$<ACCOUNTNUM={\"91*\"}>} LEDGERAMOUNTMST*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)\n/\n  sum({$<ACCOUNTNUM={\"91*\"}>} BudgetAmountMst*FROM_LOCAL_TO_USD/FROM_USD_TO_ANY)*-1)*100",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Expenses_Budget_Ratio",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vJMME",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ROIC",
+      "qDef": " ( (Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,ACCOUNTNUM={\"6*\",\"7*\",\"8*\",\"9*\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}, Year =  , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*[Currency Average Rate])\n \n -\n Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,ACCOUNTNUM={\"941002\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}, Year =  , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*[Currency Average Rate])\n \n )*-1\n \n +\n \n Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,ACCOUNTNUM={\"E-VR*\",\"E-BONUS*\",\"E-IMP-MF*\"},BudgetModel={\"Ext.Table\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},Year =  , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*[Currency Average Rate])\n -\n  Sum({$<[Month ID] = {\">$(v_Max_Month_ID_LY) <=$(v_Max_Month_ID)\"}  ,ACCOUNTNUM={\"E-OIAL-FRC\"},BudgetModel={\"Ext.Table\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},Year =  , Quarter=, Month=, [Month Year]=>} \n BudgetAmountMst*[Currency Average Rate]))\n \n \n /\n \n ($(F_Total_S_H_Equity_YTD) \n \n - Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"421*\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*[Currency Average Rate])\n \n - Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"411*\",\"412\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*[Currency Average Rate])\n \n - Sum({$<[Month ID] = {\"<=$(v_Max_Month_ID)\"},ACCOUNTNUM={\"111*\",\"112*\",\"113*\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}, Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} \n LEDGERAMOUNTMST*[Currency Average Rate])\n \n \n )",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "ROIC",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vvwYG",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Affiliates Positive",
+      "qDef": "$(v_F_Affiliates_P)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Affiliates Positive",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vwTb",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Depreciation_PY_YTD",
+      "qDef": "$(v_Depreciation_PY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Depreciation_PY_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "wSYCkm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Cash And Banks",
+      "qDef": "$(v_Cash_And_Banks)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Cash And Banks",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "wsAKC",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Affiliates Negative Budget",
+      "qDef": "$(v_F_Affiliates_P_Budget)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Affiliates Negative Budget",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xZyxYpD",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "EBIT_Actual",
+      "qDef": "$(EBIT_Actual)\n  \n  \n  \n  ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "EBIT_Actual",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xmfpwPS",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "BS_Total_Equity",
+      "qDef": "$(v_Share_Holders_Equity)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "BS_Total_Equity",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "yPbCKLv",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FinancialCharges_PY_YTD",
+      "qDef": " $(v_FinancialCharges_PY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "FinancialCharges_PY_YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ypfaZC",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Total Trade Receivables",
+      "qDef": "$(v_Total_Receivables)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Total Trade Receivables",
+      "description": "",
+      "tags": []
+    }
+  }
+]

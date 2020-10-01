@@ -1,0 +1,1260 @@
+[
+  {
+    "qInfo": {
+      "qId": "CKgDN",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "d37c8fce-da31-4e66-8c32-85cd9d3d2b7e",
+    "creationDate": "2017-09-15T06:44:37.087Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 10,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Net Sales",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 763141838.7681584,
+          "qMax": 763141838.7681584,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "VpPWPA",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Contribution",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 164005610.05200002,
+          "qMax": 164005610.05200002,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "fmqB",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "%overNetSales",
+          "qApprMaxGlyphCount": 6,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.2149084242540458,
+          "qMax": 0.2149084242540458,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "sfwWWW",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Expenses_Actual",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 204109563.84954974,
+          "qMax": 204109563.84954974,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "Jaxwr",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "EBITDA_Actual",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 60086526.744011015,
+          "qMax": 60086526.744011015,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "ANgJ",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "%EBITDAoverSales",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.07873572603619919,
+          "qMax": 0.07873572603619919,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "VmjTESr",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Depreciation",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 29229722.155419968,
+          "qMax": 29229722.155419968,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "Fbtm",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Financial Charges",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 12246251.453534381,
+          "qMax": 12246251.453534381,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "RhMmFL",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Net Earnings_Actual",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 25722717.16524001,
+          "qMax": 25722717.16524001,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "SXpCbD",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "\n\n\npick(v_Selected_Dimension_5,$(Net Earnings_Actual) /$(v_Net_Sales)*1000,$(Net Earnings_YTD) /$(v_Net_Sales_YTD)*1000)\n  \n  \n  ",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.03370633853172155,
+          "qMax": 0.03370633853172155,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "nJNaJ",
+          "numFormatFromTemplate": true
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "763,141,839",
+          "qNum": 763141838.7681584,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "164,005,610",
+          "qNum": 164005610.05200002,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "21.49%",
+          "qNum": 0.2149084242540458,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "204,109,564",
+          "qNum": 204109563.84954974,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "60,086,527",
+          "qNum": 60086526.744011015,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "7.87%",
+          "qNum": 0.07873572603619919,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "29,229,722",
+          "qNum": 29229722.155419968,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "12,246,251",
+          "qNum": 12246251.453534381,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "25,722,717",
+          "qNum": 25722717.16524001,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "3.37%",
+          "qNum": 0.03370633853172155,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "responsive": "all",
+    "markdown": "**=[](VpPWPA)**^[**=[](fmqB)**\n](inherit)%[=[](sfwWWW)](2)^[^[**=[](Jaxwr)**\n](inherit)^[**#[=[](ANgJ)](3)**\n](inherit)^[%[_=[](VmjTESr)_](2)\n](inherit)^[**=[](Fbtm)**\n](inherit)^[**=[](RhMmFL)**\n](inherit)^[#[**=[](SXpCbD)**](3)\n](inherit)](inherit)#[%[_=[](nJNaJ)_](2)](11)",
+    "images": [],
+    "background": {
+      "isUsed": false,
+      "size": "auto",
+      "position": "topLeft",
+      "url": {}
+    },
+    "visualization": "text-image",
+    "": [],
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 28,
+          "h": 0
+        }
+      },
+      "rtl": false,
+      "scrollTopPercent": 0,
+      "verticalScrollWidth": 8.1875,
+      "parent": {
+        "h": 87.859375,
+        "w": 1920
+      }
+    },
+    "visualizationType": "text-image",
+    "sourceObjectId": "SkVQMgs",
+    "timestamp": 1505457876962,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "aqYptk",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "d37c8fce-da31-4e66-8c32-85cd9d3d2b7e",
+    "creationDate": "2017-09-15T06:50:20.871Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 10,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Net Sales",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 763141838.7681584,
+          "qMax": 763141838.7681584,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "VpPWPA",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Contribution",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 164005610.05200002,
+          "qMax": 164005610.05200002,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "fmqB",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "%overNetSales",
+          "qApprMaxGlyphCount": 6,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.2149084242540458,
+          "qMax": 0.2149084242540458,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "sfwWWW",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Expenses_Actual",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 204109563.84954974,
+          "qMax": 204109563.84954974,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "Jaxwr",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "EBITDA_Actual",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 60086526.744011015,
+          "qMax": 60086526.744011015,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "ANgJ",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "%EBITDAoverSales",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.07873572603619919,
+          "qMax": 0.07873572603619919,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "VmjTESr",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Depreciation",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 29229722.155419968,
+          "qMax": 29229722.155419968,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "Fbtm",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Financial Charges",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 12246251.453534381,
+          "qMax": 12246251.453534381,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "RhMmFL",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Net Earnings_Actual",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 25722717.16524001,
+          "qMax": 25722717.16524001,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "SXpCbD",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "\n\n\npick(v_Selected_Dimension_5,$(Net Earnings_Actual) /$(v_Net_Sales)*1000,$(Net Earnings_YTD) /$(v_Net_Sales_YTD)*1000)\n  \n  \n  ",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.03370633853172155,
+          "qMax": 0.03370633853172155,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "nJNaJ",
+          "numFormatFromTemplate": true
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "763,141,839",
+          "qNum": 763141838.7681584,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "164,005,610",
+          "qNum": 164005610.05200002,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "21.49%",
+          "qNum": 0.2149084242540458,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "204,109,564",
+          "qNum": 204109563.84954974,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "60,086,527",
+          "qNum": 60086526.744011015,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "7.87%",
+          "qNum": 0.07873572603619919,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "29,229,722",
+          "qNum": 29229722.155419968,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "12,246,251",
+          "qNum": 12246251.453534381,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "25,722,717",
+          "qNum": 25722717.16524001,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "3.37%",
+          "qNum": 0.03370633853172155,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "responsive": "all",
+    "markdown": "**=[](VpPWPA)**^[**=[](fmqB)**\n](inherit)%[=[](sfwWWW)](2)^[^[**=[](Jaxwr)**\n](inherit)^[**#[=[](ANgJ)](3)**\n](inherit)^[%[_=[](VmjTESr)_](2)\n](inherit)^[**=[](Fbtm)**\n](inherit)^[**=[](RhMmFL)**\n](inherit)^[#[**=[](SXpCbD)**](3)\n](inherit)](inherit)#[%[_=[](nJNaJ)_](2)](11)",
+    "images": [],
+    "background": {
+      "isUsed": true,
+      "size": "fill",
+      "position": "centerCenter",
+      "url": {
+        "qStaticContentUrlDef": {}
+      }
+    },
+    "visualization": "text-image",
+    "": [],
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 28,
+          "h": 0
+        }
+      },
+      "rtl": false,
+      "scrollTopPercent": 0,
+      "verticalScrollWidth": 8.1875,
+      "parent": {
+        "h": 87.859375,
+        "w": 1920
+      }
+    },
+    "visualizationType": "text-image",
+    "sourceObjectId": "LLhde",
+    "timestamp": 1505458220619,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "kQvRgMY",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "d37c8fce-da31-4e66-8c32-85cd9d3d2b7e",
+    "creationDate": "2017-09-15T06:50:15.999Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 10,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Net Sales",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 763141838.7681584,
+          "qMax": 763141838.7681584,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "VpPWPA",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Contribution",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 164005610.05200002,
+          "qMax": 164005610.05200002,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "fmqB",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "%overNetSales",
+          "qApprMaxGlyphCount": 6,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.2149084242540458,
+          "qMax": 0.2149084242540458,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "sfwWWW",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Expenses_Actual",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 204109563.84954974,
+          "qMax": 204109563.84954974,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "Jaxwr",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "EBITDA_Actual",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 60086526.744011015,
+          "qMax": 60086526.744011015,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "ANgJ",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "%EBITDAoverSales",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.07873572603619919,
+          "qMax": 0.07873572603619919,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "VmjTESr",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Depreciation",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 29229722.155419968,
+          "qMax": 29229722.155419968,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "Fbtm",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Financial Charges",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 12246251.453534381,
+          "qMax": 12246251.453534381,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "RhMmFL",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Net Earnings_Actual",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 25722717.16524001,
+          "qMax": 25722717.16524001,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "SXpCbD",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "\n\n\npick(v_Selected_Dimension_5,$(Net Earnings_Actual) /$(v_Net_Sales)*1000,$(Net Earnings_YTD) /$(v_Net_Sales_YTD)*1000)\n  \n  \n  ",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "0.00%",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.03370633853172155,
+          "qMax": 0.03370633853172155,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "nJNaJ",
+          "numFormatFromTemplate": true
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "763,141,839",
+          "qNum": 763141838.7681584,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "164,005,610",
+          "qNum": 164005610.05200002,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "21.49%",
+          "qNum": 0.2149084242540458,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "204,109,564",
+          "qNum": 204109563.84954974,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "60,086,527",
+          "qNum": 60086526.744011015,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "7.87%",
+          "qNum": 0.07873572603619919,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "29,229,722",
+          "qNum": 29229722.155419968,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "12,246,251",
+          "qNum": 12246251.453534381,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "25,722,717",
+          "qNum": 25722717.16524001,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "3.37%",
+          "qNum": 0.03370633853172155,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "responsive": "all",
+    "markdown": "**=[](VpPWPA)**^[**=[](fmqB)**\n](inherit)%[=[](sfwWWW)](2)^[^[**=[](Jaxwr)**\n](inherit)^[**#[=[](ANgJ)](3)**\n](inherit)^[%[_=[](VmjTESr)_](2)\n](inherit)^[**=[](Fbtm)**\n](inherit)^[**=[](RhMmFL)**\n](inherit)^[#[**=[](SXpCbD)**](3)\n](inherit)](inherit)#[%[_=[](nJNaJ)_](2)](11)",
+    "images": [],
+    "background": {
+      "isUsed": true,
+      "size": "fill",
+      "position": "centerCenter",
+      "url": {
+        "qStaticContentUrlDef": {}
+      }
+    },
+    "visualization": "text-image",
+    "": [],
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 28,
+          "h": 0
+        }
+      },
+      "rtl": false,
+      "scrollTopPercent": 0,
+      "verticalScrollWidth": 8.1875,
+      "parent": {
+        "h": 87.859375,
+        "w": 1920
+      }
+    },
+    "visualizationType": "text-image",
+    "sourceObjectId": "LLhde",
+    "timestamp": 1505458215874,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "mnM",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "d37c8fce-da31-4e66-8c32-85cd9d3d2b7e",
+    "creationDate": "2017-09-14T12:40:13.527Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 0,
+        "qcy": 0
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [],
+      "qEffectiveInterColumnSortOrder": [],
+      "qGrandTotalRow": [],
+      "qDataPages": [],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "responsive": "all",
+    "markdown": "**Descriptions**",
+    "images": [],
+    "background": {
+      "isUsed": false,
+      "size": "auto",
+      "position": "topLeft",
+      "url": {}
+    },
+    "visualization": "text-image",
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 181,
+          "h": 29
+        }
+      },
+      "rtl": false,
+      "scrollTopPercent": 0,
+      "verticalScrollWidth": 0,
+      "parent": {
+        "h": 1014,
+        "w": 1920
+      }
+    },
+    "visualizationType": "text-image",
+    "sourceObjectId": "PmUbgr",
+    "timestamp": 1505392813402,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "pkB",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "d37c8fce-da31-4e66-8c32-85cd9d3d2b7e",
+    "creationDate": "2017-09-14T11:50:10.322Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 1,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Contribution",
+          "qApprMaxGlyphCount": 11,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 385090979.550613,
+          "qMax": 385090979.550613,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "autoSort": true,
+          "cId": "nbFpLu",
+          "numFormatFromTemplate": true
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "385,090,980",
+          "qNum": 385090979.550613,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "responsive": "all",
+    "markdown": "=[](nbFpLu)",
+    "images": [],
+    "background": {
+      "isUsed": false,
+      "size": "auto",
+      "position": "topLeft",
+      "url": {}
+    },
+    "visualization": "text-image",
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 117,
+          "h": 29
+        }
+      },
+      "rtl": false,
+      "scrollTopPercent": 0,
+      "verticalScrollWidth": 0.328125,
+      "parent": {
+        "h": 1014,
+        "w": 1920
+      }
+    },
+    "visualizationType": "text-image",
+    "sourceObjectId": "zsfJ",
+    "timestamp": 1505389810192,
+    "isClone": false
+  }
+]

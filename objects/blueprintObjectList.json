@@ -1,0 +1,1956 @@
+{
+  "qInfos": [
+    {
+      "qId": "015c903f-17d4-4956-8eb9-9317a8203a1c",
+      "qType": "listbox"
+    },
+    {
+      "qId": "01954fcb-4378-44bf-9c38-235abd403a92",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "0296ad84-8023-4b1b-bc0d-0b26c13865d4",
+      "qType": "table"
+    },
+    {
+      "qId": "02a5c26c-a2ec-4c08-80b7-4c2e2580ef6c",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "0382fcdc-6042-41cd-a808-698122595fee",
+      "qType": "table"
+    },
+    {
+      "qId": "03c4dccb-bb6f-418e-9f5c-3958695a8cb5",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "03c99022-0664-423b-bb18-d87ff9532841",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "0404b6a1-c180-4c5a-8b4e-2ee5814e071e",
+      "qType": "table"
+    },
+    {
+      "qId": "05a80edb-d071-4b41-8e79-d15304c8dc91",
+      "qType": "listbox"
+    },
+    {
+      "qId": "074c591e-a030-4f7b-a742-35602f57c6b4",
+      "qType": "kpi"
+    },
+    {
+      "qId": "07825363-56c1-4495-be6d-ef7f16bc4789",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "09786b7e-199e-4153-8c74-c572863a8389",
+      "qType": "table"
+    },
+    {
+      "qId": "09e98324-2418-42d9-8764-407b732f5359",
+      "qType": "listbox"
+    },
+    {
+      "qId": "0ab24083-5966-4984-9fd6-4fc6385dcdd0",
+      "qType": "variable"
+    },
+    {
+      "qId": "0ac70d7c-f826-437b-a438-f0812c4a6da1",
+      "qType": "listbox"
+    },
+    {
+      "qId": "0e5898f2-e28d-44cb-b1fa-63d2f6c15c2b",
+      "qType": "table"
+    },
+    {
+      "qId": "0e68a6b1-aff2-4e46-a493-63da9f14abf3",
+      "qType": "listbox"
+    },
+    {
+      "qId": "1002c136-424c-4c19-9c49-4506a0b2cab9",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "111f134f-190b-41fb-ac4d-d0ca6f5a74be",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "1204448a-4316-4cfa-8300-0914fbe85403",
+      "qType": "variable"
+    },
+    {
+      "qId": "1245051b-8fe8-40b4-8601-b96f853e64c8",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "1319141a-0e9e-4d71-b2db-b82bff26fd26",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "14788c96-60aa-4001-9afe-12bf1043ca88",
+      "qType": "variable"
+    },
+    {
+      "qId": "1499891f-2d89-4cab-b31f-e0ba1a5cb1a0",
+      "qType": "table"
+    },
+    {
+      "qId": "16ef02b2-728d-4e8a-8039-ca79c5c6113b",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "1786a617-a31d-4d38-b9f6-dd65debb4390",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "1a114196-3855-4a86-938c-3ebee8fc0ee7",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "1c36f3bc-2e78-41f3-b5d9-d153c4077b97",
+      "qType": "listbox"
+    },
+    {
+      "qId": "1c9e159b-ec20-4f37-a756-1edf3e03ad4d",
+      "qType": "listbox"
+    },
+    {
+      "qId": "1dc19700-44f9-42d3-a706-de2989d979a4",
+      "qType": "kpi"
+    },
+    {
+      "qId": "1dd75a5c-46ee-44de-83fd-6e072f4f6771",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "20279c9c-0c54-4dc2-aae1-5119587264ae",
+      "qType": "gauge"
+    },
+    {
+      "qId": "20851a0c-d155-4ea4-be23-27357f1d150a",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "21b08d8c-7b65-44cb-9f9d-6b651f2245d5",
+      "qType": "variable"
+    },
+    {
+      "qId": "24596ede-3e99-43f4-8b67-1221d5a0adce",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "25b731dc-c098-44ec-8386-42861d7457d5",
+      "qType": "variable"
+    },
+    {
+      "qId": "26f77b29-5c95-42a4-987b-140981346334",
+      "qType": "listbox"
+    },
+    {
+      "qId": "2706df7f-ce00-474f-904d-7170c99b4339",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "28cd1041-c7e2-4940-a799-e79f69f60501",
+      "qType": "variable"
+    },
+    {
+      "qId": "291fd489-7425-48e8-9ecd-31bb04da9a93",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "2978965e-9546-4df0-8cd2-aa955d02d1e5",
+      "qType": "variable"
+    },
+    {
+      "qId": "29a7dc9c-8d1d-445b-bae0-5ae799f758b5",
+      "qType": "table"
+    },
+    {
+      "qId": "29d1a35d-c4aa-4777-bb9a-c242f2cdd929",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "29fca0ce-0cfa-4f4f-b6f2-67447da52dd0",
+      "qType": "linechart"
+    },
+    {
+      "qId": "2b5e0c16-8af4-406a-a1b1-6830dfe97fae",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "2dc9d03c-2da9-4083-b508-c42d209ad907",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "2e09e870-958a-46cc-a14d-2bf8a998e525",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "2e3816c1-c3c2-47f9-9249-b25aab87effa",
+      "qType": "text-image"
+    },
+    {
+      "qId": "2e7196dc-8de0-4219-a831-ad0d8ec38f3f",
+      "qType": "listbox"
+    },
+    {
+      "qId": "2fd77f60-002f-4934-92c3-339c97066e9e",
+      "qType": "listbox"
+    },
+    {
+      "qId": "304f3323-32ad-485e-8288-956eff615684",
+      "qType": "listbox"
+    },
+    {
+      "qId": "34ad88fd-71cf-4464-900d-0a6f75c8420e",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "350e910a-a402-42e8-9c24-394a9f7fc2b9",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "352b7bb0-db13-4b8b-bd17-0ba0cb24c4d4",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "36d9b99c-cb09-417e-beb0-b5a6bc17fcd2",
+      "qType": "listbox"
+    },
+    {
+      "qId": "3789af60-c47d-4c7b-8143-43cac348b99d",
+      "qType": "text-image"
+    },
+    {
+      "qId": "39822080-decd-4ee6-856e-d413623b5c31",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "39d70e2b-aef7-4cba-8c95-0a4e2b737473",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "3a0d18fe-4fb2-4d33-8500-d45ab5082e7c",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "3a74f914-7a8d-458c-aed4-422c22e1949c",
+      "qType": "gauge"
+    },
+    {
+      "qId": "3b75979f-652d-46f9-be84-128654361d95",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "3d3df1d8-75e6-4167-a9eb-59c78758d779",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "3d89e2f7-aadf-48c0-b7d8-818610574d1b",
+      "qType": "variable"
+    },
+    {
+      "qId": "4151b883-05d8-43c1-b459-1958a9ec9c56",
+      "qType": "listbox"
+    },
+    {
+      "qId": "434589b8-b59e-4fed-aa37-0fb9dea08297",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "44b6de14-3f1f-41c3-bda2-e8df35ad383f",
+      "qType": "variable"
+    },
+    {
+      "qId": "4547bcd5-5857-445d-b26f-03412611960a",
+      "qType": "variable"
+    },
+    {
+      "qId": "468a3beb-5c57-41e8-b440-b752bcd088f8",
+      "qType": "listbox"
+    },
+    {
+      "qId": "48cb680f-3426-4f64-a3a3-4c6bc032fbe2",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "49e07077-5b90-4631-a2c8-17dd71526c5d",
+      "qType": "listbox"
+    },
+    {
+      "qId": "4b4dcdcd-0d45-473e-8570-49c9a838d869",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "4c89619f-db30-462b-9238-642bb4b87668",
+      "qType": "variable"
+    },
+    {
+      "qId": "4d3bfcd8-34b3-4088-bf7a-91f1131fb301",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "4df53544-3d34-435e-82ac-4c4892d0b867",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "4e3c3a28-c5cc-4856-9a9c-489e71abab5c",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "4ff4f229-bfe9-42d1-b515-23a381bcd82d",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "512b466b-f299-4939-9b9a-cd1458ffcf24",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "516886b3-bedb-4f73-a67e-3f9900205d78",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "562b0639-06b9-4353-8d46-1b3e334972f3",
+      "qType": "listbox"
+    },
+    {
+      "qId": "568c595f-fd56-4c65-bb1c-14dfe0f2889b",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "58ce711e-3f4d-45a3-8b3d-9ca8d8aeba47",
+      "qType": "listbox"
+    },
+    {
+      "qId": "59f962dd-77e5-4703-bfdb-9bc59cd7b1ef",
+      "qType": "gauge"
+    },
+    {
+      "qId": "5b57315d-390f-4761-a175-4d53a45e623b",
+      "qType": "listbox"
+    },
+    {
+      "qId": "5cf69680-1c49-453a-8aea-bdec9e20cbb7",
+      "qType": "table"
+    },
+    {
+      "qId": "5e84a828-087b-4be0-8499-c7147c063a97",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "6006bb74-86aa-457f-921c-888c16eaa6cf",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "616febd0-3871-40c0-ad58-fcdf3bb3eb42",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "652cd907-d1cf-443f-a7ca-45eb1acbcf14",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "677688e8-c71d-4d31-a8c6-2255c40b1a95",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "69504559-94fe-492c-98e8-b22ada603061",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "695282ae-2611-4a0b-bb90-8cef5d51bf27",
+      "qType": "listbox"
+    },
+    {
+      "qId": "69aea8c7-87a3-4bd1-9fb9-54aad1cee0ad",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "6ca96767-c598-42ca-a291-2a7d8687bf61",
+      "qType": "listbox"
+    },
+    {
+      "qId": "6e5f6b44-30fa-4f28-8967-a2d214b58cab",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "6ee0a860-b19d-448a-bac6-035d0d5e9e03",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "701e125e-a67a-4eaa-94a3-b32d45177b5d",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "73fc75ff-5095-4227-8b3b-a876c69a4a8e",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "76760d82-613c-4522-87b6-9bfb89dadf49",
+      "qType": "listbox"
+    },
+    {
+      "qId": "7817fd6a-5c7c-49d5-8795-7fe2fbb5e743",
+      "qType": "table"
+    },
+    {
+      "qId": "786d68d5-70d5-4716-a99b-d51b310ba66f",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "79374b39-dcc4-47fc-a3df-e3a7e6be546b",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "79f53019-c680-47f1-88f1-23a665d554b0",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "7a9ae3b7-f70c-46eb-9c15-c6369118ad0a",
+      "qType": "kpi"
+    },
+    {
+      "qId": "7adf1ac1-6182-40e4-9dc1-d04dd9f29859",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "7b159e2f-6a02-4559-929a-4df9e09cba49",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "7df2a331-5f98-47b1-ab88-483f908f029b",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "7e8abe36-3ca3-4b76-af20-b8276b054252",
+      "qType": "kpi"
+    },
+    {
+      "qId": "7eb1e7e2-6be0-45f7-89aa-c31521a5bdfc",
+      "qType": "kpi"
+    },
+    {
+      "qId": "7f1016ea-79a9-4699-816d-04a96a2dacf1",
+      "qType": "kpi"
+    },
+    {
+      "qId": "7f71ceb1-b65d-4faa-8598-bd341aa6c5b9",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "7fbe3d0f-890d-498e-b5eb-66e4b48ce02c",
+      "qType": "table"
+    },
+    {
+      "qId": "8041bbfd-e0ef-420f-bc5f-59f616c5ecc7",
+      "qType": "text-image"
+    },
+    {
+      "qId": "805bbd4f-6fd7-4950-a7a2-421290836b5f",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "8130f2be-e2b6-4ef3-99a7-df77354a5541",
+      "qType": "listbox"
+    },
+    {
+      "qId": "824c1c68-df6b-4435-a920-c0bac23acf4b",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "83eb5278-cb57-4ed1-b325-679811ece5d6",
+      "qType": "variable"
+    },
+    {
+      "qId": "84294110-4d00-4856-8269-777ad2e37b07",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "848ef811-0d8f-471e-b621-7e353dd1988e",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "84cae1cf-9249-408e-8ff6-88672d59eb56",
+      "qType": "kpi"
+    },
+    {
+      "qId": "84cbfebc-cc51-4a00-9bea-32d95107efe4",
+      "qType": "listbox"
+    },
+    {
+      "qId": "87dde67f-5b3d-40b1-9ec9-df5e09b903d7",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "87f69d42-518c-45d8-a323-d2b74017892a",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "882251aa-ea4b-40cd-a712-72cf6f5596f1",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "892bc0f5-0f02-446d-b1e7-d91cee489c0e",
+      "qType": "variable"
+    },
+    {
+      "qId": "8a53f3ba-6f39-4ffa-a0e0-9abc89211c50",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "8de7d499-ca98-457f-a41e-d535172c5696",
+      "qType": "gauge"
+    },
+    {
+      "qId": "8e53c358-a531-408d-841b-e3c3d308d0c1",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "90d6338c-737c-4620-a5dd-4643ef6301e5",
+      "qType": "listbox"
+    },
+    {
+      "qId": "93d3db5e-c437-4e76-ac43-25d7aaca6d27",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "94576c3c-9dca-4c6f-9b55-bc3c91bfe295",
+      "qType": "linechart"
+    },
+    {
+      "qId": "972331db-1ede-49fa-86b5-1dcd5060857a",
+      "qType": "table"
+    },
+    {
+      "qId": "9742ac72-e0fa-4244-80d6-6735fc9046d0",
+      "qType": "listbox"
+    },
+    {
+      "qId": "9746ae18-085e-48f3-b15f-239394005bf8",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "97ad3b5f-cbfe-42b0-b45a-c86d935a2738",
+      "qType": "listbox"
+    },
+    {
+      "qId": "995a1460-8177-4fe5-a14b-5dd3a00340c3",
+      "qType": "text-image"
+    },
+    {
+      "qId": "998984f8-079f-4a50-b06f-3fb82e36dbb0",
+      "qType": "kpi"
+    },
+    {
+      "qId": "9a3d8a59-22db-4fe2-a108-d8cef0072662",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "9a60a03d-827a-4ad8-a069-05693c78fca8",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "9f9197c6-3abe-40e4-8307-458f6a4c6848",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "9f97827e-147c-4e17-a6b0-18144f9c3e24",
+      "qType": "table"
+    },
+    {
+      "qId": "AHRwfqj",
+      "qType": "listbox"
+    },
+    {
+      "qId": "BCzynPb",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "BFKDYs",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "BWL",
+      "qType": "gauge"
+    },
+    {
+      "qId": "BaPDnrH",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "BpRY",
+      "qType": "text-image"
+    },
+    {
+      "qId": "BsQGyXq",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "BtyxRC",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "BzdcBpd",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "CKgDN",
+      "qType": "snapshot",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "CNYPqNx",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "CbsReH",
+      "qType": "widget"
+    },
+    {
+      "qId": "CeTyEKR",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "CnPpYJP",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "DELxav",
+      "qType": "kpi"
+    },
+    {
+      "qId": "DEWjwQ",
+      "qType": "variable"
+    },
+    {
+      "qId": "DFqMmJg",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "DJXpEW",
+      "qType": "linechart"
+    },
+    {
+      "qId": "DTeKKE",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "DnmFz",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "EREhtUc",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "EUUrMT",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "EVgCfp",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "EbTspd",
+      "qType": "kpi"
+    },
+    {
+      "qId": "EybBN",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "FHfjTZ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "FMdQUpa",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "FMfF",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "FThV",
+      "qType": "gauge"
+    },
+    {
+      "qId": "FmEmLG",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "FzsW",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "HFDcJt",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "HbPdTR",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "HjemPJG",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "HyASew",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "JACsjut",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "JKQXqsU",
+      "qType": "gauge"
+    },
+    {
+      "qId": "JQgqUD",
+      "qType": "gauge"
+    },
+    {
+      "qId": "Jcjus",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "JhGtG",
+      "qType": "table"
+    },
+    {
+      "qId": "JjsGAH",
+      "qType": "gauge"
+    },
+    {
+      "qId": "JqnUPEa",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "JtJzGd",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "JuUnsV",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "JxWDch",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "Jydmdu",
+      "qType": "variable"
+    },
+    {
+      "qId": "KBukMPH",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "KBxAp",
+      "qType": "listbox"
+    },
+    {
+      "qId": "KJbbP",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "KKkRU",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "KRLKdpB",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "KrRNYy",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "KrZJbB",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "KtsyTJ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "LoadModel",
+      "qType": "LoadModel"
+    },
+    {
+      "qId": "LsZReaB",
+      "qType": "table"
+    },
+    {
+      "qId": "LywsPw",
+      "qType": "kpi"
+    },
+    {
+      "qId": "LyybVp",
+      "qType": "text-image"
+    },
+    {
+      "qId": "MdjdKL",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "MsqYU",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "MwaGPtg",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "NLLm",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "NmXWa",
+      "qType": "text-image"
+    },
+    {
+      "qId": "NxVJER",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "PEEUpS",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "PPpb",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "PZYY",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "PbqLm",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "Petce",
+      "qType": "variable"
+    },
+    {
+      "qId": "PmGs",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "PphgMs",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "PuGPzfB",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "PwLu",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "PxJbY",
+      "qType": "container"
+    },
+    {
+      "qId": "QLWkPH",
+      "qType": "listbox"
+    },
+    {
+      "qId": "QevbzLu",
+      "qType": "kpi"
+    },
+    {
+      "qId": "QkSatb",
+      "qType": "kpi"
+    },
+    {
+      "qId": "QsJhYS",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "RfHrNE",
+      "qType": "text-image"
+    },
+    {
+      "qId": "RpFFWy",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "RvMuFq",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "SAJHDPG",
+      "qType": "variable"
+    },
+    {
+      "qId": "SBJWeDT",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "SCzeb",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "SHZrCQ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "SchWaf",
+      "qType": "table"
+    },
+    {
+      "qId": "SctnTP",
+      "qType": "combochart"
+    },
+    {
+      "qId": "SgENGjH",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "SpNPJa",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "SuCqtuT",
+      "qType": "waterfallchart"
+    },
+    {
+      "qId": "SxsJWbm",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "TJYPaSH",
+      "qType": "table"
+    },
+    {
+      "qId": "TUNY",
+      "qType": "waterfallchart"
+    },
+    {
+      "qId": "TWPzuKc",
+      "qType": "listbox"
+    },
+    {
+      "qId": "TrFTzp",
+      "qType": "table"
+    },
+    {
+      "qId": "TvHWuc",
+      "qType": "listbox"
+    },
+    {
+      "qId": "TwxLz",
+      "qType": "combochart"
+    },
+    {
+      "qId": "UVDZKPv",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "VGJt",
+      "qType": "linechart"
+    },
+    {
+      "qId": "VPtTac",
+      "qType": "variable"
+    },
+    {
+      "qId": "VXzwVap",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "VjsuFn",
+      "qType": "listbox"
+    },
+    {
+      "qId": "VstzL",
+      "qType": "kpi"
+    },
+    {
+      "qId": "Vupaw",
+      "qType": "text-image"
+    },
+    {
+      "qId": "WAnbd",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "WBgf",
+      "qType": "listbox"
+    },
+    {
+      "qId": "WjKbTj",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "WnDmsSj",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "XQGeSj",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "XWWK",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "YPQvcar",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "YQUevY",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "YRWZkx",
+      "qType": "table"
+    },
+    {
+      "qId": "YcMxT",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "YmAdqp",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "YpGyj",
+      "qType": "listbox"
+    },
+    {
+      "qId": "YuUJ",
+      "qType": "kpi"
+    },
+    {
+      "qId": "ZADSkz",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "ZJBTeJ",
+      "qType": "listbox"
+    },
+    {
+      "qId": "ZUFSPcM",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "ZWcNFh",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "ZgRh",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "a094e06f-9279-4d9a-b2ba-68bdeb8b6c7f",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "a1414b69-b169-4ad5-a2c3-7bd88a4745ab",
+      "qType": "kpi"
+    },
+    {
+      "qId": "a15efa25-c93f-45bd-babc-e04686b09b1a",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "a2e07678-c160-4d5f-b11a-498824f62231",
+      "qType": "listbox"
+    },
+    {
+      "qId": "a3339aea-6345-4cf6-8a71-45790b23fb0a",
+      "qType": "listbox"
+    },
+    {
+      "qId": "a6a3d051-04b8-41ca-9f37-8b5e1ee16e48",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "a7866676-da6f-4855-830e-0091a3104a7e",
+      "qType": "listbox"
+    },
+    {
+      "qId": "a8a2250c-f353-482a-a96b-902aa3ad1f76",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "a9623122-741b-4ea2-9621-bd7b795b53b6",
+      "qType": "table"
+    },
+    {
+      "qId": "a9d0eac2-ad66-4cbc-819c-f46bf57a1534",
+      "qType": "listbox"
+    },
+    {
+      "qId": "aFztPB",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "aJJdwUk",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "aLEXXb",
+      "qType": "kpi"
+    },
+    {
+      "qId": "aad0d84e-ad4a-45a7-9f2c-0ba5d519fbef",
+      "qType": "listbox"
+    },
+    {
+      "qId": "ac1d9826-c49f-4f72-8de4-2cf833ef06c2",
+      "qType": "kpi"
+    },
+    {
+      "qId": "ae9a82a1-cbf4-4e54-b137-1700e5244c43",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "aeWTtky",
+      "qType": "listbox"
+    },
+    {
+      "qId": "amyGj",
+      "qType": "table"
+    },
+    {
+      "qId": "aqYptk",
+      "qType": "snapshot",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "b0783965-5a95-4853-89f7-e6d59ac2010d",
+      "qType": "sheet"
+    },
+    {
+      "qId": "b0b27dae-3e1c-4d31-a358-096bb119b98f",
+      "qType": "linechart"
+    },
+    {
+      "qId": "b2091de4-b776-4a4d-bd66-9b894355e520",
+      "qType": "variable"
+    },
+    {
+      "qId": "b210f27b-3904-49ff-adec-fa802bc19bcf",
+      "qType": "variable"
+    },
+    {
+      "qId": "b2e5819c-4271-4e90-8fe5-c7b7e078f136",
+      "qType": "text-image"
+    },
+    {
+      "qId": "b446cafb-be23-4c5f-bc10-eba8509a0c9e",
+      "qType": "listbox"
+    },
+    {
+      "qId": "b46fa2c6-ea5d-4e48-94b5-ede27efd0cb4",
+      "qType": "gauge"
+    },
+    {
+      "qId": "b5eb5184-018e-413d-878c-2a82fd04f4a6",
+      "qType": "listbox"
+    },
+    {
+      "qId": "b7dc7b9c-78b6-4968-8437-d6d1274ab608",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "b8c514f5-addb-4373-a1c2-64fd3b5d4d0b",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "b9c75bd3-48b5-4a93-8809-8c77b46dc307",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "bEZFpj",
+      "qType": "table"
+    },
+    {
+      "qId": "bGELjf",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "ba7b31cf-1051-4992-bb0d-a534f55fda0b",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "bb0243e4-5b59-45d3-9972-6b4c7902f52d",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "bbd74f75-31ff-4530-b3f9-a9a32a15e77c",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "bff18bdc-aca2-4237-bc42-3e20fdc51eb2",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "bqqrZe",
+      "qType": "container"
+    },
+    {
+      "qId": "c0859fb1-e4f7-4227-a90d-c40aa9e7c496",
+      "qType": "listbox"
+    },
+    {
+      "qId": "c16eab12-ac49-4d33-8444-3ea8f1214250",
+      "qType": "table"
+    },
+    {
+      "qId": "c1b6d284-d5f4-4d14-aa31-4cfc098b81a5",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "c21b5e1d-0e63-4ee5-84c0-4ed8ac0562c4",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "c315c4de-3db6-4db5-97b1-03ad3f397e76",
+      "qType": "listbox"
+    },
+    {
+      "qId": "c4df42d4-0b0e-4504-a762-747560a02d91",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "c556fb2b-7890-4744-9cf7-f9042de0088e",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "c64e4b1e-6837-4cea-995d-f98622e720df",
+      "qType": "kpi"
+    },
+    {
+      "qId": "c684917a-82ff-4182-a3cd-bae01f7df14e",
+      "qType": "listbox"
+    },
+    {
+      "qId": "c950040b-211d-49c3-ae54-e3a1bd998d8b",
+      "qType": "table"
+    },
+    {
+      "qId": "c9b7a51f-af9b-44fe-a0f9-c4c2b64b97b7",
+      "qType": "variable"
+    },
+    {
+      "qId": "cb36a7a9-a01e-4b66-aa21-1e840b995096",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "cc4c0145-3098-47bd-894c-2bf80ee28b55",
+      "qType": "combochart"
+    },
+    {
+      "qId": "cc98bebb-2ac7-458f-b26f-5f60b5b36fde",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "cpvkPc",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "d0cb9b70-98e9-4ac9-8540-fd6029797215",
+      "qType": "kpi"
+    },
+    {
+      "qId": "d1535fb2-499f-447f-bdfa-f9d2ea1ba2d5",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "d2422875-94f1-4737-90d3-7925931461e5",
+      "qType": "kpi"
+    },
+    {
+      "qId": "d3cd3b68-e874-41b1-8b7b-98430b88f74f",
+      "qType": "text-image"
+    },
+    {
+      "qId": "d416c122-d126-4ffe-8f9b-ad69283e6b14",
+      "qType": "variable"
+    },
+    {
+      "qId": "d4ec1f93-5ab7-4cff-a184-47877b795770",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "d5586ddb-45ff-40d4-aed1-e34fb0a5c5c9",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "d67045f4-bc09-475f-9c1a-5eb25e91347e",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "d8a84e4a-a3e7-4233-8515-ef39fa707f14",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "dJQkEA",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "dRRyP",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "dVpep",
+      "qType": "gauge"
+    },
+    {
+      "qId": "dcKL",
+      "qType": "combochart"
+    },
+    {
+      "qId": "def0e323-4e49-4cb5-8969-94a48a5ea177",
+      "qType": "text-image"
+    },
+    {
+      "qId": "df097d98-1f19-4479-aeb4-2179c6d05abf",
+      "qType": "kpi"
+    },
+    {
+      "qId": "dfCRR",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "dheFH",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "djnSANJ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "e20d2672-d98a-432b-9077-53348f0cfebf",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "e40521a6-5481-4576-9fa4-c0838d78f74d",
+      "qType": "kpi"
+    },
+    {
+      "qId": "e58ba62a-6b0f-4063-8338-06f318d5c23e",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "e5c1bfef-d080-412b-9285-c5b2b57c00e9",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "e6ec7fc3-3e00-4552-8fcb-3ee5aac4aeb9",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "e8d34050-ea2d-426e-be00-6cd17ce17923",
+      "qType": "listbox"
+    },
+    {
+      "qId": "eDdyCwm",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "eaaf4f06-bea7-41ff-a987-6f1ffdbc0912",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "eb87f1ad-3eec-4d31-a06e-b528a6574982",
+      "qType": "listbox"
+    },
+    {
+      "qId": "ecwxB",
+      "qType": "kpi"
+    },
+    {
+      "qId": "ed89b09e-0e98-4eda-9ad7-742bb94622a2",
+      "qType": "listbox"
+    },
+    {
+      "qId": "eujs",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "f1d42358-37f8-4713-ad77-54082d203ae7",
+      "qType": "kpi"
+    },
+    {
+      "qId": "f36d25ab-8eb2-406b-969e-6af5f3bb3e2e",
+      "qType": "variable"
+    },
+    {
+      "qId": "f381d549-2a32-40ef-8511-0dcf929575f3",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "f7425642-b178-4a02-ab5a-768b23a89cdf",
+      "qType": "listbox"
+    },
+    {
+      "qId": "fAMZNk",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "fFAMkzU",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "fad52b7b-e575-45c5-b168-94e9760e8db9",
+      "qType": "text-image"
+    },
+    {
+      "qId": "fc4cb97b-177d-4539-98d5-ac9668abc8bc",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "fd933b57-2ece-446f-87ea-66b460517ea3",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "fdc0d4e2-cdbd-4cc9-97ca-1168ce748e05",
+      "qType": "sheet",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "ff66b996-7598-4876-a716-655c081c0357",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "fvpk",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "gBYpkyT",
+      "qType": "variable"
+    },
+    {
+      "qId": "gSJScY",
+      "qType": "table"
+    },
+    {
+      "qId": "gVEVPE",
+      "qType": "gauge"
+    },
+    {
+      "qId": "gcJzLa",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "gcujKW",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "gkMQaN",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "gmJjRjQ",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "gnkYT",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "hJzTsG",
+      "qType": "listbox"
+    },
+    {
+      "qId": "hTjPSe",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "hZdkm",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "hbstfM",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "hmHKD",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "hpJm",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "jKVkVhH",
+      "qType": "combochart"
+    },
+    {
+      "qId": "jNJLJnC",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "jPQTJ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "jXbqdB",
+      "qType": "gauge"
+    },
+    {
+      "qId": "jYTFahE",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "jYkHz",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "jZaVpJ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "jckyB",
+      "qType": "kpi"
+    },
+    {
+      "qId": "kDSqJUr",
+      "qType": "gauge"
+    },
+    {
+      "qId": "kQvRgMY",
+      "qType": "snapshot",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "kXqza",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "kamp",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "kbYWF",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "khmGJLQ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "kzKp",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "mAYZw",
+      "qType": "appprops",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "mLestd",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "mPEjcVQ",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "mPgYqg",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "mZgT",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "mdfRE",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "mnM",
+      "qType": "snapshot",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "mvksJ",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "nCXZccU",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "nMssYJ",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "nUnYbjh",
+      "qType": "linechart"
+    },
+    {
+      "qId": "nbQPZH",
+      "qType": "listbox"
+    },
+    {
+      "qId": "njvJj",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pFAVjU",
+      "qType": "table"
+    },
+    {
+      "qId": "pGBhe",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pJGjEr",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pJnzJ",
+      "qType": "text-image"
+    },
+    {
+      "qId": "pKRAATr",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pLVZCR",
+      "qType": "kpi"
+    },
+    {
+      "qId": "pRPzZa",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pTLeFyk",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pVcrNRq",
+      "qType": "table"
+    },
+    {
+      "qId": "phfKanj",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pjPehvF",
+      "qType": "kpi"
+    },
+    {
+      "qId": "pjqpRM",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pkB",
+      "qType": "snapshot",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pmCcJuK",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "pmzJ",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "ppJZYPs",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pqqbK",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "pxGay",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "qBpsvpG",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "qFP",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "qLFmmD",
+      "qType": "masterobject",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "qPPfGYL",
+      "qType": "linechart"
+    },
+    {
+      "qId": "qnYkpqX",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "rrYbptA",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "sQmSJE",
+      "qType": "bookmark",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "sjuGfjJ",
+      "qType": "kpi"
+    },
+    {
+      "qId": "snYJnwj",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "tyHfB",
+      "qType": "table"
+    },
+    {
+      "qId": "uKExae",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "ujFqYyB",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "umPtYB",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "uqLBAs",
+      "qType": "kpi"
+    },
+    {
+      "qId": "vGyGQrP",
+      "qType": "kpi"
+    },
+    {
+      "qId": "vJMME",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "vamXdp",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "vprXC",
+      "qType": "combochart"
+    },
+    {
+      "qId": "vvwYG",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "vwTb",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "wKJKJ",
+      "qType": "variable"
+    },
+    {
+      "qId": "wSYCkm",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "wsAKC",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "xZyxYpD",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "xmfpwPS",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "xmmSUHe",
+      "qType": "combochart"
+    },
+    {
+      "qId": "xuguaV",
+      "qType": "table"
+    },
+    {
+      "qId": "yDb",
+      "qType": "kpi"
+    },
+    {
+      "qId": "yPbCKLv",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "ypfaZC",
+      "qType": "measure",
+      "modifiedDate": "2020-10-01T06:20:06.291Z"
+    },
+    {
+      "qId": "zfDvMnE",
+      "qType": "qsSimpleKPI"
+    },
+    {
+      "qId": "zjqDmnx",
+      "qType": "swr-sense-navigation"
+    }
+  ]
+}

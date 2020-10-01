@@ -1,0 +1,1540 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "fdc0d4e2-cdbd-4cc9-97ca-1168ce748e05",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "Cashflow",
+      "description": ""
+    },
+    "rank": 14,
+    "thumbnail": {
+      "qStaticContentUrlDef": {
+        "qUrl": "/content/Default/BLUE ICON.png"
+      }
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [
+      {
+        "name": "UVDZKPv",
+        "type": "filterpane",
+        "col": 0,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "mLestd",
+        "type": "filterpane",
+        "col": 1,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "PZYY",
+        "type": "filterpane",
+        "col": 2,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "JhGtG",
+        "type": "table",
+        "col": 0,
+        "row": 1,
+        "colspan": 24,
+        "rowspan": 11
+      }
+    ],
+    "qChildListDef": {
+      "qData": {
+        "title": "/title"
+      }
+    }
+  },
+  "qChildren": [
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "PZYY",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane",
+        "qLayoutExclude": {
+          "disabled": {
+            "qExtendsId": "",
+            "qHyperCubeDef": {
+              "qDimensions": [
+                {
+                  "qDef": {
+                    "qGrouping": "N",
+                    "qFieldDefs": [
+                      "Currency"
+                    ],
+                    "qFieldLabels": [
+                      "Currency"
+                    ],
+                    "qSortCriterias": [
+                      {
+                        "qSortByState": 1,
+                        "qSortByNumeric": 1,
+                        "qSortByAscii": 1,
+                        "qSortByLoadOrder": 1,
+                        "qExpression": {}
+                      }
+                    ],
+                    "qNumberPresentations": [],
+                    "qActiveField": 0,
+                    "autoSort": true
+                  },
+                  "qOtherTotalSpec": {
+                    "qOtherMode": "OTHER_OFF",
+                    "qOtherCounted": {},
+                    "qOtherLimit": {},
+                    "qOtherLimitMode": "OTHER_GT_LIMIT",
+                    "qForceBadValueKeeping": true,
+                    "qApplyEvenWhenPossiblyWrongResult": true,
+                    "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                    "qTotalMode": "TOTAL_OFF",
+                    "qReferencedExpression": {}
+                  },
+                  "qOtherLabel": {},
+                  "qTotalLabel": {},
+                  "qCalcCond": {},
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  }
+                }
+              ],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [
+                0
+              ],
+              "qSuppressMissing": true,
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            },
+            "qUndoExclude": {
+              "hashCode": 18716404,
+              "generated": {
+                "qHyperCubeDef": {
+                  "qDimensions": [
+                    {
+                      "qDef": {
+                        "qGrouping": "N",
+                        "qFieldDefs": [
+                          "Currency"
+                        ],
+                        "qFieldLabels": [
+                          "Currency"
+                        ],
+                        "qSortCriterias": [
+                          {
+                            "qSortByAscii": 1,
+                            "qSortByLoadOrder": 1,
+                            "qExpression": {}
+                          }
+                        ],
+                        "qNumberPresentations": [],
+                        "qActiveField": 0,
+                        "autoSort": true,
+                        "cId": "SjENup",
+                        "othersLabel": "Others",
+                        "textAlign": {
+                          "auto": true,
+                          "align": "left"
+                        },
+                        "representation": {
+                          "type": "text",
+                          "urlLabel": ""
+                        }
+                      },
+                      "qOtherTotalSpec": {
+                        "qOtherMode": "OTHER_OFF",
+                        "qOtherCounted": {},
+                        "qOtherLimit": {},
+                        "qOtherLimitMode": "OTHER_GT_LIMIT",
+                        "qForceBadValueKeeping": true,
+                        "qApplyEvenWhenPossiblyWrongResult": true,
+                        "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                        "qTotalMode": "TOTAL_OFF",
+                        "qReferencedExpression": {}
+                      },
+                      "qOtherLabel": {},
+                      "qTotalLabel": {},
+                      "qCalcCond": {},
+                      "qAttributeExpressions": [],
+                      "qAttributeDimensions": [],
+                      "qCalcCondition": {
+                        "qCond": {},
+                        "qMsg": {}
+                      },
+                      "othersLabel": "Others"
+                    }
+                  ],
+                  "qMeasures": [],
+                  "qInterColumnSortOrder": [
+                    0
+                  ],
+                  "qSuppressMissing": true,
+                  "qInitialDataFetch": [
+                    {
+                      "qLeft": 0,
+                      "qTop": 0,
+                      "qWidth": 0,
+                      "qHeight": 0
+                    }
+                  ],
+                  "qReductionMode": "N",
+                  "qMode": "S",
+                  "qPseudoDimPos": -1,
+                  "qNoOfLeftDims": -1,
+                  "qMaxStackedCells": 5000,
+                  "qCalcCond": {},
+                  "qTitle": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qColumnOrder": [
+                    0
+                  ],
+                  "columnOrder": [
+                    0
+                  ],
+                  "columnWidths": [
+                    -1
+                  ]
+                },
+                "showTitles": true,
+                "title": "",
+                "subtitle": "",
+                "footnote": "",
+                "showDetails": false,
+                "totals": {
+                  "show": true,
+                  "position": "noTotals",
+                  "label": "Totals"
+                },
+                "scrolling": {
+                  "keepFirstColumnInView": false
+                },
+                "multiline": {
+                  "wrapTextInHeaders": true,
+                  "wrapTextInCells": true
+                },
+                "qInfo": {
+                  "qType": "table"
+                },
+                "visualization": "table",
+                "qLayoutExclude": {
+                  "disabled": {},
+                  "quarantine": {}
+                }
+              }
+            },
+            "previousShowTitles": true
+          }
+        }
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "TWPzuKc",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "Currency"
+                ],
+                "qFieldLabels": [
+                  "Currency"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": [],
+              "qNullSuppression": false,
+              "qIncludeElemValue": false,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": ""
+                },
+                "qOtherLimit": {
+                  "qv": ""
+                },
+                "qOtherLimitMode": "OTHER_GT_LIMIT",
+                "qSuppressOther": false,
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qGlobalOtherGrouping": false,
+                "qOtherCollapseInnerDimensions": false,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {
+                  "qv": ""
+                }
+              },
+              "qShowTotal": false,
+              "qShowAll": false,
+              "qOtherLabel": {
+                "qv": ""
+              },
+              "qTotalLabel": {
+                "qv": ""
+              },
+              "qCalcCond": {
+                "qv": ""
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {
+                  "qv": ""
+                },
+                "qMsg": {
+                  "qv": ""
+                }
+              }
+            },
+            "title": "Currency",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "UVDZKPv",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane",
+        "qLayoutExclude": {
+          "disabled": {
+            "qExtendsId": "",
+            "qHyperCubeDef": {
+              "qDimensions": [
+                {
+                  "qDef": {
+                    "qGrouping": "N",
+                    "qFieldDefs": [
+                      "BU NAME"
+                    ],
+                    "qFieldLabels": [
+                      "BU NAME"
+                    ],
+                    "qSortCriterias": [
+                      {
+                        "qSortByState": 1,
+                        "qSortByNumeric": 1,
+                        "qSortByAscii": 1,
+                        "qSortByLoadOrder": 1,
+                        "qExpression": {}
+                      }
+                    ],
+                    "qNumberPresentations": [],
+                    "qActiveField": 0,
+                    "autoSort": true
+                  },
+                  "qOtherTotalSpec": {
+                    "qOtherMode": "OTHER_OFF",
+                    "qOtherCounted": {},
+                    "qOtherLimit": {},
+                    "qOtherLimitMode": "OTHER_GT_LIMIT",
+                    "qForceBadValueKeeping": true,
+                    "qApplyEvenWhenPossiblyWrongResult": true,
+                    "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                    "qTotalMode": "TOTAL_OFF",
+                    "qReferencedExpression": {}
+                  },
+                  "qOtherLabel": {},
+                  "qTotalLabel": {},
+                  "qCalcCond": {},
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  }
+                }
+              ],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [
+                0
+              ],
+              "qSuppressMissing": true,
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            },
+            "qUndoExclude": {
+              "hashCode": -1470480033,
+              "generated": {
+                "qHyperCubeDef": {
+                  "qDimensions": [
+                    {
+                      "qDef": {
+                        "qGrouping": "N",
+                        "qFieldDefs": [
+                          "BU NAME"
+                        ],
+                        "qFieldLabels": [
+                          "BU NAME"
+                        ],
+                        "qSortCriterias": [
+                          {
+                            "qSortByAscii": 1,
+                            "qSortByLoadOrder": 1,
+                            "qExpression": {}
+                          }
+                        ],
+                        "qNumberPresentations": [],
+                        "qActiveField": 0,
+                        "autoSort": true,
+                        "cId": "SyeYsB",
+                        "othersLabel": "Others",
+                        "textAlign": {
+                          "auto": true,
+                          "align": "left"
+                        },
+                        "representation": {
+                          "type": "text",
+                          "urlLabel": ""
+                        }
+                      },
+                      "qOtherTotalSpec": {
+                        "qOtherMode": "OTHER_OFF",
+                        "qOtherCounted": {},
+                        "qOtherLimit": {},
+                        "qOtherLimitMode": "OTHER_GT_LIMIT",
+                        "qForceBadValueKeeping": true,
+                        "qApplyEvenWhenPossiblyWrongResult": true,
+                        "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                        "qTotalMode": "TOTAL_OFF",
+                        "qReferencedExpression": {}
+                      },
+                      "qOtherLabel": {},
+                      "qTotalLabel": {},
+                      "qCalcCond": {},
+                      "qAttributeExpressions": [],
+                      "qAttributeDimensions": [],
+                      "qCalcCondition": {
+                        "qCond": {},
+                        "qMsg": {}
+                      },
+                      "othersLabel": "Others"
+                    }
+                  ],
+                  "qMeasures": [],
+                  "qInterColumnSortOrder": [
+                    0
+                  ],
+                  "qSuppressMissing": true,
+                  "qInitialDataFetch": [
+                    {
+                      "qLeft": 0,
+                      "qTop": 0,
+                      "qWidth": 0,
+                      "qHeight": 0
+                    }
+                  ],
+                  "qReductionMode": "N",
+                  "qMode": "S",
+                  "qPseudoDimPos": -1,
+                  "qNoOfLeftDims": -1,
+                  "qMaxStackedCells": 5000,
+                  "qCalcCond": {},
+                  "qTitle": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qColumnOrder": [
+                    0
+                  ],
+                  "columnOrder": [
+                    0
+                  ],
+                  "columnWidths": [
+                    -1
+                  ]
+                },
+                "showTitles": true,
+                "title": "",
+                "subtitle": "",
+                "footnote": "",
+                "showDetails": false,
+                "totals": {
+                  "show": true,
+                  "position": "noTotals",
+                  "label": "Totals"
+                },
+                "scrolling": {
+                  "keepFirstColumnInView": false
+                },
+                "multiline": {
+                  "wrapTextInHeaders": true,
+                  "wrapTextInCells": true
+                },
+                "qInfo": {
+                  "qType": "table"
+                },
+                "visualization": "table",
+                "qLayoutExclude": {
+                  "disabled": {},
+                  "quarantine": {}
+                }
+              }
+            },
+            "previousShowTitles": true
+          }
+        }
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "AHRwfqj",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "BU NAME"
+                ],
+                "qFieldLabels": [
+                  "BU NAME"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": [],
+              "qNullSuppression": false,
+              "qIncludeElemValue": false,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": ""
+                },
+                "qOtherLimit": {
+                  "qv": ""
+                },
+                "qOtherLimitMode": "OTHER_GT_LIMIT",
+                "qSuppressOther": false,
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qGlobalOtherGrouping": false,
+                "qOtherCollapseInnerDimensions": false,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {
+                  "qv": ""
+                }
+              },
+              "qShowTotal": false,
+              "qShowAll": false,
+              "qOtherLabel": {
+                "qv": ""
+              },
+              "qTotalLabel": {
+                "qv": ""
+              },
+              "qCalcCond": {
+                "qv": ""
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {
+                  "qv": ""
+                },
+                "qMsg": {
+                  "qv": ""
+                }
+              }
+            },
+            "title": "BU NAME",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "mLestd",
+          "qType": "filterpane"
+        },
+        "qExtendsId": "pxGay",
+        "qMetaDef": {}
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "VjsuFn",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "Year"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "pPmDDcG"
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": [],
+              "qOtherTotalSpec": {}
+            },
+            "showTitles": true,
+            "title": "Year",
+            "subtitle": "",
+            "footnote": "",
+            "showDetails": false,
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "JhGtG",
+          "qType": "table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "Cashflow Caption"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": 1,
+                    "qExpression": {
+                      "qv": "[Cashflow Caption Order]"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "zdYUz",
+                "othersLabel": "Others",
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "representation": {
+                  "type": "text",
+                  "urlLabel": ""
+                }
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "othersLabel": "Others"
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "Cashflow Caption Description"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "pjVhVb",
+                "othersLabel": "Others",
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "representation": {
+                  "type": "text",
+                  "urlLabel": ""
+                }
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "othersLabel": "Others"
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "JAN",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "\r\nif( \n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=1'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=1'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\n\n\nsum({$< [Month Num]={'1'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "None",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "HubmtGg",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "FEB",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=2'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=2'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'2'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=2'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'2'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "ThS",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "MAR",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=3'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=3'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'3'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=3'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'3'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "BWGyMpj",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "APR",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=4'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=4'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'4'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=4'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'4'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "kBMymx",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "MAY",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=5'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=5'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'5'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=5'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'5'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "agFTcQ",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "JUN",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=6'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=6'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'6'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=6'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'6'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "NrhPQqu",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "JUL",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=7'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=7'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'7'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=7'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'7'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "pkcNH",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "AUG",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=8'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=8'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'8'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=8'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'8'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "PhhSg",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "SEP",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=9'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=9'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'9'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=9'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'9'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "JpQC",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "OCT",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=10'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=10'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'10'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=10'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'10'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "DePXSJv",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "NOV",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=11'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=11'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'11'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=11'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'11'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "Expr",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "AYdze",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "DEC",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if( \r\n[Cashflow Caption] = 'Cummulative cash flow' ,  sum({$< [Month Num]={'<=12'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Bank facility-(Medium term)',sum({$< [Month Num]={'<=12'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\nIF([Cashflow Caption] = 'Closing Cash Balance' , \nsum({$< [Month Num]={'12'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'CM'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n+\nsum({$< [Month Num]={'<=12'}, Year = {$(v_Max_Year)} , [CF Calcualtion Period] = {'YTD'} ,  [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate]),\n\nsum({$< [Month Num]={'12'}, Year = {$(v_Max_Year)} , [Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))}>} BankTransAmountUSD*[Currency Average Rate])\n)))",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAggrFunc": "None",
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "uCeBSL",
+                "numFormatFromTemplate": true,
+                "textAlign": {
+                  "auto": true,
+                  "align": "left"
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if([Cashflow Caption Order] = '7' OR [Cashflow Caption Order] = '18' OR [Cashflow Caption Order] = '26' OR [Cashflow Caption Order] = '27' OR [Cashflow Caption Order] = '33' , RED(), \r\nIf([Cashflow Caption Order] = '28' OR [Cashflow Caption Order] = '29' , lightgray() , \nWHITE()))",
+                  "id": "cellBackgroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "qSuppressZero": true,
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 0,
+              "qHeight": 0
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qAlwaysFullyExpanded": true,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "columnOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "columnWidths": [
+            211,
+            295,
+            140,
+            122,
+            111,
+            115,
+            116,
+            110,
+            94,
+            101,
+            107,
+            115,
+            113,
+            111
+          ],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": "Cashflow Report",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "totals": {
+          "show": false,
+          "position": "noTotals",
+          "label": "Totals"
+        },
+        "scrolling": {
+          "keepFirstColumnInView": false
+        },
+        "multiline": {
+          "wrapTextInHeaders": true,
+          "wrapTextInCells": true
+        },
+        "visualization": "table",
+        "qLayoutExclude": {
+          "disabled": {
+            "qExtendsId": ""
+          },
+          "quarantine": {
+            "pivotInterColSortOrder": [
+              0,
+              1,
+              -1
+            ],
+            "noOfLeftDims": {
+              "qHyperCubeDef.qNoOfLeftDims": 2
+            },
+            "pivotTableColumnWidths": {
+              "qHyperCubeDef.columnWidths": [
+                [],
+                [
+                  232,
+                  352
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "qChildren": []
+    }
+  ]
+}

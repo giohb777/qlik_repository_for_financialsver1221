@@ -1,0 +1,23 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "mAYZw",
+        "qType": "appprops"
+      },
+      "qMetaDef": {},
+      "sheetTitleBgColor": "#4273a5",
+      "sheetTitleGradientColor": "",
+      "sheetTitleColor": "#ffffff",
+      "sheetLogoThumbnail": {
+        "qStaticContentUrlDef": {
+          "qUrl": "/appcontent/12ca5fd4-fe00-4af7-b6ec-a93ab0c8763f/Financials 1_2_Powered.jpg"
+        }
+      },
+      "sheetLogoPosition": "right",
+      "rtl": false,
+      "theme": "sense"
+    },
+    "qChildren": []
+  }
+]

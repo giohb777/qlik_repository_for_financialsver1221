@@ -1,0 +1,1696 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 153,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 45,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 13,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 16,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 16,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "ACCESS",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "ACCOUNTNAME",
+    "qCardinal": 1972,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Ledgertable"
+    ]
+  },
+  {
+    "qName": "ACCOUNTNUM",
+    "qCardinal": 956,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions",
+      "Ledgertable"
+    ]
+  },
+  {
+    "qName": "AccountCategoryDesc",
+    "qCardinal": 17,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Ledgertable"
+    ]
+  },
+  {
+    "qName": "Application",
+    "qCardinal": 62,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "BU NAME",
+    "qCardinal": 25,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_unit"
+    ]
+  },
+  {
+    "qName": "Bank Transaction Record Key",
+    "qCardinal": 79507,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Bank Transaction Type",
+    "qCardinal": 27,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "BankTransAmountUSD",
+    "qCardinal": 12924,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "BudgetAmountMst",
+    "qCardinal": 140745,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "BudgetModel",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Building Block",
+    "qCardinal": 188,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Building Block Mix Key",
+    "qCardinal": 5998,
+    "qTags": [
+      "$key",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items",
+      "NAPCO_Consolidated_Building_Blocks"
+    ]
+  },
+  {
+    "qName": "Building Block old",
+    "qCardinal": 124,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "FinancialsSales"
+    ]
+  },
+  {
+    "qName": "Business Type",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Business Unit Location",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_unit"
+    ]
+  },
+  {
+    "qName": "Business Unit Type",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_unit"
+    ]
+  },
+  {
+    "qName": "CF Calcualtion Period",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Cashflow Caption",
+    "qCardinal": 33,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Cashflow Caption Description",
+    "qCardinal": 32,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Cashflow Caption Order",
+    "qCardinal": 33,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "CostCenter",
+    "qCardinal": 724,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "CostCenter"
+    ]
+  },
+  {
+    "qName": "CostCenterMixKey",
+    "qCardinal": 7583,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions",
+      "CostCenter"
+    ]
+  },
+  {
+    "qName": "CostCenterName",
+    "qCardinal": 770,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "CostCenter"
+    ]
+  },
+  {
+    "qName": "Count This Month",
+    "qCardinal": 78,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Count This Month - Hired",
+    "qCardinal": 45,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Count This Month - Support Staff",
+    "qCardinal": 39,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Currency",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Average Rate",
+    "qCardinal": 1989,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Conversion Rate Date Num",
+    "qCardinal": 8787,
+    "qTags": [
+      "$key",
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Currency_Rates",
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Currency EOD Rate",
+    "qCardinal": 1989,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Key",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Sorting Key",
+    "qCardinal": 6,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Symbol",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "DATAAREAID",
+    "qCardinal": 33,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions",
+      "Business_unit"
+    ]
+  },
+  {
+    "qName": "Day",
+    "qCardinal": 31,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Department",
+    "qCardinal": 113,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Departement"
+    ]
+  },
+  {
+    "qName": "DepartmentMixKey",
+    "qCardinal": 1363,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions",
+      "Departement"
+    ]
+  },
+  {
+    "qName": "DepartmentName",
+    "qCardinal": 119,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Departement"
+    ]
+  },
+  {
+    "qName": "Employee Rec Key",
+    "qCardinal": 20171,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Employee Status Type",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Employee Type",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ExpenseCategory",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ExtraAmount",
+    "qCardinal": 3766,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ExtraBudgetAmount",
+    "qCardinal": 755,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "FROM_LOCAL_TO_USD",
+    "qCardinal": 1989,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "FROM_USD_TO_ANY",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Financial Mixed Security Key",
+    "qCardinal": 1352,
+    "qTags": [
+      "$key",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Departement",
+      "Shared_Security"
+    ]
+  },
+  {
+    "qName": "FinancialsSalesKey",
+    "qCardinal": 1612,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "FinancialsSales",
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Forecast Net Weight",
+    "qCardinal": 86074,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FinancialsSales"
+    ]
+  },
+  {
+    "qName": "Forecast Sub Net Weight",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "FinancialsSales"
+    ]
+  },
+  {
+    "qName": "Industry",
+    "qCardinal": 177,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "Invoice Amount USD",
+    "qCardinal": 550872,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Cost USD",
+    "qCardinal": 676600,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Creation Date",
+    "qCardinal": 2798,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Discount Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Issuing Date",
+    "qCardinal": 2798,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Key",
+    "qCardinal": 779398,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions",
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Kg",
+    "qCardinal": 210636,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Lbp",
+    "qCardinal": 210636,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Line Number",
+    "qCardinal": 5111,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice MSF",
+    "qCardinal": 14372,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice MT",
+    "qCardinal": 195457,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Main Amount USD",
+    "qCardinal": 375273,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Misc Charges By Value Amount USD",
+    "qCardinal": 171993,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Misc Charges By Weight Amount USD",
+    "qCardinal": 192588,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Misc Charges Provision By Value Amount USD",
+    "qCardinal": 214592,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Misc Charges Provision By Weight Amount USD",
+    "qCardinal": 233858,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Number",
+    "qCardinal": 376092,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Pieces",
+    "qCardinal": 14198,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Process",
+    "qCardinal": 4,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Quantity",
+    "qCardinal": 73898,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Quantity Unit",
+    "qCardinal": 65,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice SQM",
+    "qCardinal": 14372,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice US Ton",
+    "qCardinal": 195757,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoice Values Sign",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales"
+    ]
+  },
+  {
+    "qName": "Invoiced Net Weight",
+    "qCardinal": 209206,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FinancialsSales"
+    ]
+  },
+  {
+    "qName": "Invoiced Sub Net Weight",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "FinancialsSales"
+    ]
+  },
+  {
+    "qName": "Item Code",
+    "qCardinal": 87738,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Description",
+    "qCardinal": 77265,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Inventory Unit",
+    "qCardinal": 60,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Key",
+    "qCardinal": 158271,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Invoiced_Sales",
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Name",
+    "qCardinal": 143444,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Number",
+    "qCardinal": 87738,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Origin Type",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Source",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Type Key",
+    "qCardinal": 189,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Joined This Month",
+    "qCardinal": 19,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Joined This Month - Hired",
+    "qCardinal": 18,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Joined This Month - Support Staff",
+    "qCardinal": 9,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "LEDGERAMOUNTMST",
+    "qCardinal": 932941,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "LEDGERAMOUNTMST_TRENDING",
+    "qCardinal": 66102,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "LedgerTransTrending"
+    ]
+  },
+  {
+    "qName": "Ledger Budget Key",
+    "qCardinal": 753874,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Ledger Report Category Key",
+    "qCardinal": 43268,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Ledger Trans Key",
+    "qCardinal": 3448088,
+    "qTags": [],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Ledger Trans Trending Key",
+    "qCardinal": 74899,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "LedgerTransTrending",
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Market Application",
+    "qCardinal": 62,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "Market Group",
+    "qCardinal": 76,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "Market Sector",
+    "qCardinal": 177,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "Market Sector Description",
+    "qCardinal": 177,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "Market Sector Mix Key",
+    "qCardinal": 584,
+    "qTags": [
+      "$key",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix",
+      "Items"
+    ]
+  },
+  {
+    "qName": "Market Sector Mix Source",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date",
+    "qCardinal": 1827,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date Num",
+    "qCardinal": 3004,
+    "qTags": [
+      "$key",
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar",
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Mixed Security Key",
+    "qCardinal": 1389,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Security"
+    ]
+  },
+  {
+    "qName": "Month",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Day",
+    "qCardinal": 366,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month ID",
+    "qCardinal": 60,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Num",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Year",
+    "qCardinal": 60,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Napco Building Block",
+    "qCardinal": 19,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NAPCO_Consolidated_Building_Blocks"
+    ]
+  },
+  {
+    "qName": "Napco Building Block Level1",
+    "qCardinal": 25,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NAPCO_Consolidated_Building_Blocks"
+    ]
+  },
+  {
+    "qName": "Napco Building Block Level2",
+    "qCardinal": 76,
+    "qTags": [],
+    "qSrcTables": [
+      "NAPCO_Consolidated_Building_Blocks"
+    ]
+  },
+  {
+    "qName": "Napco Building Block Level3",
+    "qCardinal": 210,
+    "qTags": [],
+    "qSrcTables": [
+      "NAPCO_Consolidated_Building_Blocks"
+    ]
+  },
+  {
+    "qName": "OverheadCategory",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ParentCategory",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Product Details",
+    "qCardinal": 394,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Product Line",
+    "qCardinal": 445,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Product Line old",
+    "qCardinal": 432,
+    "qTags": [],
+    "qSrcTables": [
+      "FinancialsSales"
+    ]
+  },
+  {
+    "qName": "Product Packed/End Use",
+    "qCardinal": 330,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Product Style Line",
+    "qCardinal": 445,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Product Style Mix Code",
+    "qCardinal": 1,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Product Style Mix Description",
+    "qCardinal": 4877,
+    "qTags": [
+      "$key",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Product Style Mix Key",
+    "qCardinal": 5460,
+    "qTags": [
+      "$key",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Product_Styles_Mix",
+      "Items"
+    ]
+  },
+  {
+    "qName": "Product Style Mix Source",
+    "qCardinal": 2,
+    "qTags": [
+      "$key",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Purpose",
+    "qCardinal": 42114,
+    "qTags": [],
+    "qSrcTables": [
+      "Purpose"
+    ]
+  },
+  {
+    "qName": "PurposeMixKey",
+    "qCardinal": 301239,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions",
+      "Purpose"
+    ]
+  },
+  {
+    "qName": "PurposeName",
+    "qCardinal": 34475,
+    "qTags": [],
+    "qSrcTables": [
+      "Purpose"
+    ]
+  },
+  {
+    "qName": "Quarter",
+    "qCardinal": 4,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter ID",
+    "qCardinal": 20,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter Year",
+    "qCardinal": 20,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Report Category",
+    "qCardinal": 42,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ReportCategoryAmount",
+    "qCardinal": 27979,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ReportCategoryBudget",
+    "qCardinal": 18119,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ReportCategoryLineOrder",
+    "qCardinal": 42,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Reporting Currency",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Sales Type",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Sector",
+    "qCardinal": 76,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Market_Sectors_Mix"
+    ]
+  },
+  {
+    "qName": "SecurityBUKey",
+    "qCardinal": 41,
+    "qTags": [],
+    "qSrcTables": [
+      "Departement"
+    ]
+  },
+  {
+    "qName": "SecurityDepKey",
+    "qCardinal": 113,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Departement"
+    ]
+  },
+  {
+    "qName": "Structure",
+    "qCardinal": 567,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Style",
+    "qCardinal": 188,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Style Category",
+    "qCardinal": 330,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Style Family",
+    "qCardinal": 567,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Style Type",
+    "qCardinal": 394,
+    "qTags": [],
+    "qSrcTables": [
+      "Product_Styles_Mix"
+    ]
+  },
+  {
+    "qName": "Terminated This Month",
+    "qCardinal": 14,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Terminated This Month - Hired",
+    "qCardinal": 11,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Terminated This Month - Support Staff",
+    "qCardinal": 5,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "USERID",
+    "qCardinal": 211,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Week",
+    "qCardinal": 53,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Day",
+    "qCardinal": 7,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Year",
+    "qCardinal": 264,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Year",
+    "qCardinal": 5,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  }
+]

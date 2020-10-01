@@ -1,0 +1,18 @@
+{
+  "qTitle": "Financials Ver. 1.2(2)(1)",
+  "qLastReloadTime": "2020-10-01T07:06:23.311Z",
+  "qMigrationHash": "98d482c3f964dccf69cbfb9a00e0c048ea6eb221",
+  "qSavedInProductVersion": "12.388.3",
+  "qThumbnail": {
+    "qUrl": "/content/IFP Library/Financials.jpg"
+  },
+  "qHasSectionAccess": true,
+  "hassectionaccess": true,
+  "createdDate": "2020-10-01T06:19:33.724Z",
+  "modifiedDate": "2020-10-01T06:20:06.291Z",
+  "published": false,
+  "publishTime": "1753-01-01T00:00:00.000Z",
+  "description": "",
+  "dynamicColor": "hsla(200,18%,43%,1)",
+  "stream": null
+}

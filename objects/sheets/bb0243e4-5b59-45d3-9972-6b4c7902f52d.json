@@ -1,0 +1,1811 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "bb0243e4-5b59-45d3-9972-6b4c7902f52d",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "P&L Analysis - v3.0",
+      "description": "EBT (1)\nEBT (2)"
+    },
+    "rank": 74,
+    "thumbnail": {
+      "qStaticContentUrlDef": {
+        "qUrl": "/appcontent/12ca5fd4-fe00-4af7-b6ec-a93ab0c8763f/FinancialsLogo.jpg"
+      }
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [
+      {
+        "name": "c4df42d4-0b0e-4504-a762-747560a02d91",
+        "type": "filterpane",
+        "col": 7,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "1245051b-8fe8-40b4-8601-b96f853e64c8",
+        "type": "filterpane",
+        "col": 8,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "1786a617-a31d-4d38-b9f6-dd65debb4390",
+        "type": "filterpane",
+        "col": 6,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "e6ec7fc3-3e00-4552-8fcb-3ee5aac4aeb9",
+        "type": "filterpane",
+        "col": 5,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "73fc75ff-5095-4227-8b3b-a876c69a4a8e",
+        "type": "pivot-table",
+        "col": 13,
+        "row": 4,
+        "colspan": 11,
+        "rowspan": 5
+      },
+      {
+        "name": "2e09e870-958a-46cc-a14d-2bf8a998e525",
+        "type": "pivot-table",
+        "col": 13,
+        "row": 0,
+        "colspan": 11,
+        "rowspan": 4
+      },
+      {
+        "name": "6006bb74-86aa-457f-921c-888c16eaa6cf",
+        "type": "pivot-table",
+        "col": 13,
+        "row": 9,
+        "colspan": 11,
+        "rowspan": 3
+      },
+      {
+        "name": "512b466b-f299-4939-9b9a-cd1458ffcf24",
+        "type": "pivot-table",
+        "col": 0,
+        "row": 1,
+        "colspan": 13,
+        "rowspan": 11,
+        "bounds": {
+          "y": 8.333333333333332,
+          "x": 0,
+          "width": 54.166666666666664,
+          "height": 91.66666666666666
+        }
+      },
+      {
+        "name": "d416c122-d126-4ffe-8f9b-ad69283e6b14",
+        "type": "variable",
+        "col": 11,
+        "row": 0,
+        "colspan": 2,
+        "rowspan": 1
+      },
+      {
+        "name": "14788c96-60aa-4001-9afe-12bf1043ca88",
+        "type": "variable",
+        "col": 0,
+        "row": 0,
+        "colspan": 5,
+        "rowspan": 1
+      },
+      {
+        "name": "25b731dc-c098-44ec-8386-42861d7457d5",
+        "type": "variable",
+        "col": 9,
+        "row": 0,
+        "colspan": 2,
+        "rowspan": 1
+      }
+    ],
+    "navPoints": []
+  },
+  "qChildren": [
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "6006bb74-86aa-457f-921c-888c16eaa6cf",
+          "qType": "pivot-table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=ValueList('Sales Overheads - Domestic','Sales Overheads - Export','Provisions for Bad Debt','Total Sales Overheads')"
+                ],
+                "qFieldLabels": [
+                  "Sales Overheads"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "nRzaTC",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=pick($(v_Selected_Dimension_5),Year,[Quarter Year],[Month Year],[BU NAME])"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByAscii": -1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "qLabelExpression": "=pick($(v_Selected_Dimension_5),'Year(s)','Quarter(s)','Month(s)','BU(s)')",
+                "autoSort": false,
+                "cId": "BpSGmY",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Actual",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Num(Pick(RowNo()\r\n\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"91*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},DepartmentName={\"Sales\"},CostCenter={'*'}-{\"Sales-Exp*\"}-{\"Sales-Mkt\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"912022\"},[ACCOUNTNAME]={\"Overheads - Doubtful & Compensation Account\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},DepartmentName= {\"Sales\"},CostCenter={'*'}-{\"Sales-Exp*\"}-{\"Sales-Mkt\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"91*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},DepartmentName={\"Sales\"},CostCenter={\"Sales-Exp*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"912022\"},[ACCOUNTNAME]={\"Overheads - Doubtful & Compensation Account\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},DepartmentName={\"Sales\"},CostCenter={\"Sales-Exp*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]= {\"912022\"},[ACCOUNTNAME]={\"Overheads - Doubtful & Compensation Account\"},PurposeMixKey-={\"Non -Operating Expen*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},CostCenter={\"Sales*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'91*'},OverheadCategory={\"Indirect Overhead\"},DepartmentName={\"Sales\"},CostCenter={'*'}-{\"Sales-Mkt\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]= {\"912022\"},[ACCOUNTNAME]={\"Overheads - Doubtful & Compensation Account\"},PurposeMixKey={\"Non -Operating Expen*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},CostCenter={\"Sales*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n)/Pick($(v_Selected_Dimension_7)\n\t,\t1000\n\t,\t+Sum({$<[Report Category]=,[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}[Invoiced Net Weight])\n\t,\t+Sum({$<[Month ID]={\"=$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Net Sales\"},Year=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t\t-Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0))\n,Text(Pick($(v_Selected_Dimension_7),'#,##0','##0.00',Text('##0.0%'))),'.',',')",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "mYahC",
+                "numFormatFromTemplate": true,
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(ValueList('Sales Overheads - Domestic','Sales Overheads - Export','Provisions for Bad Debt','Total Sales Overheads')='Total Sales Overheads',rgb(255,160,160))",
+                  "qAttribute": true
+                },
+                {
+                  "qAttribute": true
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 50,
+              "qHeight": 50
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "P",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": 1,
+          "qMaxStackedCells": 5000,
+          "qShowTotalsAbove": true,
+          "qIndentMode": true,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "columnWidths": [
+            [
+              224
+            ],
+            [
+              null,
+              null
+            ]
+          ],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            }
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "pivot-table"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "c4df42d4-0b0e-4504-a762-747560a02d91",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "a7866676-da6f-4855-830e-0091a3104a7e",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "Year"
+                ],
+                "qFieldLabels": [
+                  "Year"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Year",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "1245051b-8fe8-40b4-8601-b96f853e64c8",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "84cbfebc-cc51-4a00-9bea-32d95107efe4",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Month Year]"
+                ],
+                "qFieldLabels": [
+                  "=[Month Year]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Month",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "1786a617-a31d-4d38-b9f6-dd65debb4390",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "6ca96767-c598-42ca-a291-2a7d8687bf61",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "Currency"
+                ],
+                "qFieldLabels": [
+                  "Currency"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Currency",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "e6ec7fc3-3e00-4552-8fcb-3ee5aac4aeb9",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "a2e07678-c160-4d5f-b11a-498824f62231",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[BU NAME]"
+                ],
+                "qFieldLabels": [
+                  "=[BU NAME]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "BU(s)",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "2e09e870-958a-46cc-a14d-2bf8a998e525",
+          "qType": "pivot-table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=AccountCategoryDesc"
+                ],
+                "qFieldLabels": [
+                  "Cost Category"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Sum({$< [Currency Sorting Key]= {$(=MaxString([Currency Sorting Key]))}, [ACCOUNTNUM]= {\">=910000\"}, [ACCOUNTNUM]= {\"<920000\"}, ParentCategory=, OverheadCategory= {\"Direct Overhead\"}, [Month ID]= , Year= {$(v_Max_Year)}, Quarter= , Month= , [Month Year]= >}LEDGERAMOUNTMST*[Currency Average Rate])"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "JpYktMw",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=CostCenterName"
+                ],
+                "qFieldLabels": [
+                  "Section"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Sum({$< [Currency Sorting Key]= {$(=MaxString([Currency Sorting Key]))}, [ACCOUNTNUM]= {\">=910000\"}, [ACCOUNTNUM]= {\"<920000\"}, ParentCategory=, OverheadCategory= {\"Direct Overhead\"}, [Month ID]= , Year= {$(v_Max_Year)}, Quarter= , Month= , [Month Year]= >}LEDGERAMOUNTMST*[Currency Average Rate])"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "fPvnL",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0%"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=ACCOUNTNUM"
+                ],
+                "qFieldLabels": [
+                  "Account No."
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "uaZJ",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0%"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=if(AccountCategoryDesc='01-Salaries & Benefits'\n\t,ACCOUNTNAME\n    ,PurposeName\n)\n\n"
+                ],
+                "qFieldLabels": [
+                  "Details"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Sum({$< [Currency Sorting Key]= {$(=MaxString([Currency Sorting Key]))}, [ACCOUNTNUM]= {\">=910000\"}, [ACCOUNTNUM]= {\"<920000\"}, ParentCategory=, OverheadCategory= {\"Direct Overhead\"}, [Month ID]= , Year= {$(v_Max_Year)}, Quarter= , Month= , [Month Year]= >}LEDGERAMOUNTMST*[Currency Average Rate])"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "puZtqUg",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0%"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=pick($(v_Selected_Dimension_5),Year,[Quarter Year],[Month Year],[BU NAME])"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByAscii": -1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "qLabelExpression": "=pick($(v_Selected_Dimension_5),'Year(s)','Quarter(s)','Month(s)','BU(s)')",
+                "autoSort": false,
+                "cId": "SxJzjY",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Actual",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"91*\"},OverheadCategory={\"Direct Overhead\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\r\n/1000",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "LvEmyjD",
+                "numFormatFromTemplate": true,
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {},
+                {}
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 50,
+              "qHeight": 50
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "P",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": 4,
+          "qMaxStackedCells": 5000,
+          "qShowTotalsAbove": true,
+          "qIndentMode": true,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "columnWidths": [
+            [
+              248
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": "",
+        "subtitle": {
+          "qStringExpression": {
+            "qExpr": "='Direct Cost : Value x 000'"
+          }
+        },
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "pivot-table"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "25b731dc-c098-44ec-8386-42861d7457d5",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": true,
+        "title": "",
+        "subtitle": "",
+        "footnote": "Inter Company Sales",
+        "showDetails": false,
+        "variableName": "v_Selected_Dimension_6",
+        "style": "material",
+        "width": "fill",
+        "customwidth": "",
+        "render": "s",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "Included",
+            "cId": "gVKhB"
+          },
+          {
+            "value": "2",
+            "label": "Excluded",
+            "cId": "NsHmf"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Selected_Dimension_6"
+          }
+        },
+        "version": "2.3.1",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Variable",
+          "description": "Variable extension",
+          "template": "variable",
+          "isThirdParty": true,
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "14788c96-60aa-4001-9afe-12bf1043ca88",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Selected_Dimension_5",
+        "style": "material",
+        "width": "",
+        "customwidth": "",
+        "render": "b",
+        "alternatives": [
+          {
+            "value": "4",
+            "label": "BU(s)",
+            "cId": "wJFsGy"
+          },
+          {
+            "value": "1",
+            "label": "Yearly",
+            "cId": "gVKhB"
+          },
+          {
+            "value": "2",
+            "label": "Quarterly",
+            "cId": "NsHmf"
+          },
+          {
+            "value": "3",
+            "label": "Monthly",
+            "cId": "MakGNU"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Selected_Dimension_5"
+          }
+        },
+        "version": "2.3.1",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Variable",
+          "description": "Variable extension",
+          "template": "variable",
+          "isThirdParty": true,
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "73fc75ff-5095-4227-8b3b-a876c69a4a8e",
+          "qType": "pivot-table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=DepartmentName"
+                ],
+                "qFieldLabels": [
+                  "Department"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Sum({$< [Currency Sorting Key]= {$(=MaxString([Currency Sorting Key]))}, [ACCOUNTNUM]= {\">=910000\"}, [ACCOUNTNUM]= {\"<920000\"}, ParentCategory=, OverheadCategory= {\"Direct Overhead\"}, [Month ID]= , Year= {$(v_Max_Year)}, Quarter= , Month= , [Month Year]= >}LEDGERAMOUNTMST*[Currency Average Rate])"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "fPvnL",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0%"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=AccountCategoryDesc"
+                ],
+                "qFieldLabels": [
+                  "Cost Category"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Sum({$< [Currency Sorting Key]= {$(=MaxString([Currency Sorting Key]))}, [ACCOUNTNUM]= {\">=910000\"}, [ACCOUNTNUM]= {\"<920000\"}, ParentCategory=, OverheadCategory= {\"Direct Overhead\"}, [Month ID]= , Year= {$(v_Max_Year)}, Quarter= , Month= , [Month Year]= >}LEDGERAMOUNTMST*[Currency Average Rate])"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "JpYktMw",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=ACCOUNTNUM"
+                ],
+                "qFieldLabels": [
+                  "Account No."
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "uaZJ",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0%"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=ACCOUNTNAME"
+                ],
+                "qFieldLabels": [
+                  "Details"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Sum({$< [Currency Sorting Key]= {$(=MaxString([Currency Sorting Key]))}, [ACCOUNTNUM]= {\">=910000\"}, [ACCOUNTNUM]= {\"<920000\"}, ParentCategory=, OverheadCategory= {\"Direct Overhead\"}, [Month ID]= , Year= {$(v_Max_Year)}, Quarter= , Month= , [Month Year]= >}LEDGERAMOUNTMST*[Currency Average Rate])"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "puZtqUg",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0%"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_EXPR",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=pick($(v_Selected_Dimension_5),Year,[Quarter Year],[Month Year],[BU NAME])"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByAscii": -1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "qLabelExpression": "=pick($(v_Selected_Dimension_5),'Year(s)','Quarter(s)','Month(s)','BU(s)')",
+                "autoSort": false,
+                "cId": "WfKTSUn",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Actual",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'91*'},OverheadCategory={\"Indirect Overhead\"},CostCenter={'*'}-{'Sales*'}+{\"Sales-Mkt\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Quarter=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])/1000\r\n-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'912025'},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])/1000",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "LvEmyjD",
+                "numFormatFromTemplate": true,
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qAttribute": true
+                },
+                {
+                  "qAttribute": true
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 50,
+              "qHeight": 50
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "P",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": 4,
+          "qMaxStackedCells": 5000,
+          "qShowTotalsAbove": true,
+          "qIndentMode": true,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "columnWidths": [
+            [
+              248
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": "",
+        "subtitle": {
+          "qStringExpression": {
+            "qExpr": "='Indirect Cost : Value x 000'"
+          }
+        },
+        "footnote": ".",
+        "showDetails": false,
+        "visualization": "pivot-table"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "512b466b-f299-4939-9b9a-cd1458ffcf24",
+          "qType": "pivot-table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=ValueList('Net Weight'\r\n,'-'\n,'Gross Sales'\n,'Commissions & Discounts'\n,'Freight'\n,'Net Sales'\n,'- '\n,'Cost of Goods Sold'\n,'Material Variance'\n,'Production Variance'\n,'Total COGS'\n,'Contribution'\n,' -'\n,'BU Indirect Overheads'\n,'Sales Overheads'\n,'Technical Support & Services'\n,'Consultancy Fees'\n,'Company Overheads'\n,' - '\n,'Other Gain/Loss'\n,'Volume Rebate'\n,'Bonus'\n,'Redundant Transaction'\n,'Impact on Consultancy'\n,'E.B.I.T.D.A.'\n,'.'\n,'Depreciation'\n,'E.B.I.T.'\n,'Financial'\n,'E.B.T. (1)'\n,'. '\n,'Board Expenses'\n,'Non Operating Expenses'\n,'Impact on Consultancy '\n,'E.B.T. (2)')"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "qLabelExpression": "=Pick($(v_Selected_Dimension_7),'Value x 000','Value per Kg','% Over Net Sales')",
+                "autoSort": false,
+                "cId": "YwVKmu",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=pick($(v_Selected_Dimension_5),Year,[Quarter Year],[Month Year],[BU NAME])"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByNumeric": -1,
+                    "qSortByAscii": -1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "qLabelExpression": "=pick($(v_Selected_Dimension_5),'Year(s)','Quarter(s)','Month(s)','BU(s)')",
+                "autoSort": false,
+                "cId": "zEarg",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Actual",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Num(Pick(RowNo()\r\n\n,\t+Sum({$<[Report Category]=,[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}[Invoiced Net Weight])\n\n,\t0\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"611*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"631*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"641*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Net Sales\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t-Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\n,\t0\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"71*\"}-{\"711002\"}-{\"713001\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711002\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"713001\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"Net Sales\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t+Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Contribution\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Contribution\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n,\t0\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'91*'},OverheadCategory={\"Indirect Overhead\"},CostCenter={'*'}-{'Sales*'}+{\"Sales-Mkt\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Quarter=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'912025'},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'91*'},OverheadCategory={\"Indirect Overhead\"},DepartmentName={\"Sales\"},CostCenter={'*'}-{\"Sales-Mkt\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]= {\"912022\"},[ACCOUNTNAME]={\"Overheads - Doubtful & Compensation Account\"},PurposeMixKey={\"Non -Operating Expen*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},CostCenter={\"Sales*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},Purpose={'Ru.Redundant Charges'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},PurposeName={'Napco Board Expenses'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[Report Category]={\"Company Overheads\"},Year={$(v_Max_Year)},Quarter=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'91*'},OverheadCategory={\"Indirect Overhead\"},CostCenter={'*'}-{'Sales*'}+{\"Sales-Mkt\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n    +Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'91*'},OverheadCategory={\"Indirect Overhead\"},DepartmentName={\"Sales\"},CostCenter={'*'}-{\"Sales-Mkt\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n    +Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},Purpose={'Ru.Redundant Charges'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={'952001'},PurposeMixKey={\"Ho: Y.E Zakat & Dona*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])*.12\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[Report Category]={\"Company Overheads\"},Year={$(v_Max_Year)},Quarter=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={'912024'},OverheadCategory={\"Indirect Overhead\"},Purpose={'RU.Redundant Charges'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},PurposeName={'Napco Board Expenses'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"91*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={'952001'},PurposeMixKey={\"Ho: Y.E Zakat & Dona*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])*.12\n\n,\t0\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={\"951*\"}+{\"952*\"}+{\"954002\"}+{\"955*\"}+{\"956*\"}+{\"957*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={'952001'},PurposeMixKey={\"Ho: Y.E Zakat & Dona*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n    +Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},AccountCategoryDesc={'15-Other Gain & Loss'},Purpose={'Ru.Redundant Charges'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"95*\"},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={'E-VR*'},BudgetModel={'Ext.TABLE'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}BudgetAmountMst*[Currency Average Rate])\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},BudgetModel={'Ext.TABLE'},ACCOUNTNUM={'E-BONUS'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}BudgetAmountMst*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory=,OverheadCategory={\"Indirect Overhead\"},Purpose={'Ru.Redundant Charges'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={'952001'},PurposeMixKey={\"Ho: Y.E Zakat & Dona*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},AccountCategoryDesc={'12-Consultancy'},BudgetModel={'Ext.TABLE'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}BudgetAmountMst*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953001*\"},Purpose={'Ru.Redundant Charges'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])*0.12\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ACCOUNTNUM={'952001'},PurposeMixKey={\"Ho: Y.E Zakat & Dona*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])*0.12\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"EBITDA\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t+Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]=,ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t0\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"Depreciation\"},CostCenterName=,AccountCategoryDesc=,ACCOUNTNUM=,ACCOUNTNAME=,Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"EBT\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t-Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"Interests\"},CostCenterName=,AccountCategoryDesc=,ACCOUNTNUM=,ACCOUNTNAME=,Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"Interests\"},CostCenterName=,AccountCategoryDesc=,ACCOUNTNUM=,ACCOUNTNAME=,Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"EBT\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n,\t0\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},PurposeName={'Napco Board Expenses'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]=,ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t0\n\n,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"EBT\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"953*\"},PurposeName={'Napco Board Expenses'},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]=,ParentCategory=,OverheadCategory={\"Indirect Overhead\"},PurposeMixKey={\"Non -Operating Expen*\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n)/Pick($(v_Selected_Dimension_7)\n\t,\t1000\n\t,\t+Sum({$<[Report Category]=,[Month ID]={\"$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}[Invoiced Net Weight])\n\t,\t+Sum({$<[Month ID]={\"$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Net Sales\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t\t-Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"$(v_Max_Month_ID)\"},Year={$(v_Max_Year)},Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0))\n,Text(Pick($(v_Selected_Dimension_7),'#,##0','##0.00',Text('##0.0%'))),'.',',')\n",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "kAvrZSx",
+                "numFormatFromTemplate": true,
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(ValueList('Net Weight','-','Gross Sales','Commissions & Discounts','Freight','Net Sales','- ','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution',' -','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads',' - ','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','.','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','. ','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='Net Weight',rgb(255,255,204),\r\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='Net Sales',rgb(229,224,183),\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='Company Overheads',rgb(255,160,160),\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='Contribution',rgb(174,194,223),\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='E.B.I.T.D.A.',rgb(174,194,223),\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='E.B.I.T.',rgb(174,194,223),\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='E.B.T. (1)',rgb(174,194,223),\nif(ValueList('Net Weight','Empty 1','Gross Sales','Commissions & Discounts','Freight','Net Sales','Empty 2','Cost of Goods Sold','Material Variance','Production Variance','Total COGS','Contribution','Empty 3','BU Indirect Overheads','Sales Overheads','Technical Support & Services','Consultancy Fees','Company Overheads','Empty 4','Other Gain/Loss','Volume Rebate','Bonus','Redundant Transaction','Impact on Consultancy','E.B.I.T.D.A.','Empty 5','Depreciation','E.B.I.T.','Financial','E.B.T. (1)','Empty 6','Board Expenses','Non Operating Expenses','Impact on Consultancy ','E.B.T. (2)')='E.B.T. (2)',rgb(174,194,223)\n))))))))",
+                  "qAttribute": true,
+                  "id": "cellBackgroundColor"
+                },
+                {
+                  "qExpression": "if(Pick(RowNo()\r\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"611*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t-Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"631*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"641*\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"=$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Net Sales\"},Year=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t-Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"71*\"}-{\"711002\"}-{\"713001\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\t+Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711002\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"713001\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate])\n\n,\t-Sum({$<[Month ID]={\"=$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory={\"IS\"},[Report Category]={\"Net Sales\"},Year=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\t+Pick($(v_Selected_Dimension_6),Sum({$<[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},[ACCOUNTNUM]={\"711005\"},[Month ID]={\"=$(v_Max_Month_ID)\"},Year=,Month=,[Month Year]=>}LEDGERAMOUNTMST*[Currency Average Rate]),0)\n\t+Sum({$<[Month ID]={\"=$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Contribution\"},Year=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n,\t+Sum({$<[Month ID]={\"=$(v_Max_Month_ID)\"},[Currency Sorting Key]={$(=MaxString([Currency Sorting Key]))},ParentCategory= {\"IS\"},[Report Category]={\"Contribution\"},Year=,Month=,[Month Year]=>}ReportCategoryAmount*[Currency Average Rate])\n\n)<0,rgb(192,0,0))",
+                  "qAttribute": true,
+                  "id": "cellForegroundColor"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 50,
+              "qHeight": 50
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "P",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": 1,
+          "qMaxStackedCells": 5000,
+          "qShowTotalsAbove": true,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "columnWidths": [
+            [
+              192
+            ],
+            [
+              192
+            ]
+          ],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": {
+          "qStringExpression": {
+            "qExpr": "='Sales & Contribution : ( ' & Pick($(v_Selected_Dimension_6),' Including ','Excluding ')&' Inter-Company Sales )'\r\n"
+          }
+        },
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "pivot-table"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "d416c122-d126-4ffe-8f9b-ad69283e6b14",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": true,
+        "title": "",
+        "subtitle": "",
+        "footnote": "Measures",
+        "showDetails": false,
+        "variableName": "v_Selected_Dimension_7",
+        "style": "material",
+        "width": "fill",
+        "customwidth": "",
+        "render": "s",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "Value x 000",
+            "cId": "gVKhB"
+          },
+          {
+            "value": "2",
+            "label": "Value per Kg - Net Sales Quantity",
+            "cId": "NsHmf"
+          },
+          {
+            "value": "3",
+            "label": "Percentage of N. Sales Value",
+            "cId": "MakGNU"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Selected_Dimension_7"
+          }
+        },
+        "version": "2.3.1",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Variable",
+          "description": "Variable extension",
+          "template": "variable",
+          "isThirdParty": true,
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg"
+        }
+      },
+      "qChildren": []
+    }
+  ]
+}

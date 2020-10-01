@@ -1,0 +1,85 @@
+[
+  {
+    "qInfo": {
+      "qId": "sQmSJE",
+      "qType": "bookmark"
+    },
+    "qMetaDef": {
+      "title": "1",
+      "description": ""
+    },
+    "sheetId": "24596ede-3e99-43f4-8b67-1221d5a0adce",
+    "selectionFields": "Reporting Currency, Year, Month",
+    "creationDate": "2017-09-20T08:00:19.587Z",
+    "qData": {
+      "qBookMark": {
+        "qStateData": [
+          {
+            "qStateName": "$",
+            "qFieldItems": [
+              {
+                "qDef": {
+                  "qName": "Reporting Currency",
+                  "qType": "PRESENT"
+                },
+                "qSelectInfo": {
+                  "qRangeLo": "NaN",
+                  "qRangeHi": "NaN",
+                  "qNumberFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  },
+                  "qRangeInfo": [],
+                  "qContinuousRangeInfo": []
+                },
+                "qValues": [],
+                "qExcludedValues": []
+              },
+              {
+                "qDef": {
+                  "qName": "Year",
+                  "qType": "PRESENT"
+                },
+                "qSelectInfo": {
+                  "qRangeLo": "NaN",
+                  "qRangeHi": "NaN",
+                  "qNumberFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  },
+                  "qRangeInfo": [],
+                  "qContinuousRangeInfo": []
+                },
+                "qValues": [],
+                "qExcludedValues": []
+              },
+              {
+                "qDef": {
+                  "qName": "Month",
+                  "qType": "PRESENT"
+                },
+                "qSelectInfo": {
+                  "qRangeLo": "NaN",
+                  "qRangeHi": "NaN",
+                  "qNumberFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  },
+                  "qRangeInfo": [],
+                  "qContinuousRangeInfo": []
+                },
+                "qValues": [],
+                "qExcludedValues": []
+              }
+            ]
+          }
+        ],
+        "qUtcModifyTime": 42998.458553240744,
+        "qVariableItems": []
+      }
+    }
+  }
+]

@@ -1,0 +1,4284 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "BCzynPb",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "EBT Gauge",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "EBT",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(Net Earnings_Actual),$(Net Earnings_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "mXWjAdL",
+              "numFormatFromTemplate": true
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          0
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "refLine": {
+        "refLines": []
+      },
+      "showTitles": false,
+      "title": "EBT",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "measureAxis": {
+        "min": 0,
+        "max": {
+          "qValueExpression": {
+            "qExpr": "=Pick(    $(v_Selected_Dimension_Three) ,$(Net Earnings_Budget),$(Net Earnings_Budget_YTD))\n"
+          }
+        },
+        "show": "all",
+        "spacing": 0.5
+      },
+      "gaugetype": "radial",
+      "autoOrientation": false,
+      "orientation": "horizontal",
+      "angle": 0.7,
+      "useSegments": false,
+      "color": {
+        "useBaseColors": "off"
+      },
+      "progressColor": 3,
+      "paletteProgressColor": {
+        "index": 6
+      },
+      "valueMode": "absolute",
+      "maxSegments": 6,
+      "segmentInfo": {
+        "limits": [],
+        "colors": [
+          {
+            "color": 3
+          }
+        ],
+        "paletteColors": [
+          {
+            "index": 6
+          }
+        ]
+      },
+      "disclaimerClosed": true,
+      "visualization": "gauge",
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "DnmFz",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Overheads_Dept",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=[DepartmentName]\n  "
+              ],
+              "qFieldLabels": [
+                "by Department"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByNumeric": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "pCVkjZ",
+              "othersLabel": "Others"
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "othersLabel": "Others"
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "$(ExpensesActual_YTD)\n",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "fehDEHP",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "bar",
+                "axis": 0,
+                "marker": "circle",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "$(ExpensesBudget_YTD)\n",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "QbntS",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "line",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Prev. Year",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "$(Expenses_PY_YTD)\n",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "AHjyPUU",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "diamond",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 17,
+            "qHeight": 500
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qAlwaysFullyExpanded": true,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "=[BU NAME]"
+                  ],
+                  "qFieldLabels": [
+                    "by BU"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "UmjmG",
+                  "othersLabel": "Others"
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              },
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "=[Business Unit Location]"
+                  ],
+                  "qFieldLabels": [
+                    "by BU Location"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "nyETs",
+                  "othersLabel": "Others"
+                },
+                "qNullSuppression": true,
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              },
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "Business Unit Type"
+                  ],
+                  "qFieldLabels": [
+                    "by BU Type"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "mScnsNV",
+                  "othersLabel": "Others"
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              }
+            ],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": false,
+      "title": "Overheads",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "barGrouping": {
+        "grouping": "grouped"
+      },
+      "orientation": "vertical",
+      "scrollStartPos": 0,
+      "nullMode": "gap",
+      "dataPoint": {
+        "show": false,
+        "showLabels": false
+      },
+      "color": {
+        "auto": true,
+        "mode": "primary",
+        "useBaseColors": "off",
+        "singleColor": 3,
+        "paletteColor": {
+          "index": 6
+        },
+        "persistent": false,
+        "expressionIsColor": true,
+        "expressionLabel": "",
+        "measureScheme": "sg",
+        "reverseScheme": false,
+        "dimensionScheme": "12",
+        "autoMinMax": true,
+        "measureMin": 0,
+        "measureMax": 10
+      },
+      "legend": {
+        "show": true,
+        "dock": "top",
+        "showTitle": true
+      },
+      "dimensionAxis": {
+        "continuousAuto": true,
+        "show": "all",
+        "label": "auto",
+        "dock": "near"
+      },
+      "preferContinuousAxis": true,
+      "measureAxes": [
+        {
+          "show": "labels",
+          "dock": "near",
+          "spacing": 1,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10,
+          "logarithmic": false
+        },
+        {
+          "show": "all",
+          "dock": "far",
+          "spacing": 1,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "visualization": "combochart",
+      "measureAxis": {
+        "min": 0,
+        "max": 10
+      },
+      "qLayoutExclude": {},
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "EVgCfp",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Ratios",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=[BU NAME]"
+              ],
+              "qFieldLabels": [
+                "Location"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "vAybmT",
+              "othersLabel": "Others",
+              "representation": {
+                "type": "text"
+              }
+            },
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "othersLabel": "Others"
+          }
+        ],
+        "qMeasures": [
+          {
+            "qLibraryId": "mdfRE",
+            "qDef": {
+              "qTags": [],
+              "qGrouping": "N",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qReverseSort": true,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "vSKMnAt",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qLibraryId": "aFztPB",
+            "qDef": {
+              "qTags": [],
+              "qGrouping": "N",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "MthJzFn",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qLibraryId": "pJGjEr",
+            "qDef": {
+              "qTags": [],
+              "qGrouping": "N",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "KWAppN",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qLibraryId": "BtyxRC",
+            "qDef": {
+              "qTags": [],
+              "qGrouping": "N",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "XaywdM",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "ROE",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "$(v_ROE)",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "YMhjJxC",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "D/E",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "($(v_Total_Liabilities)) / ($(F_Total_S_H_Equity_YTD))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0.00",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "EPZjzzj",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Current Ratio",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "($(v_Total_Current_Assets)) / ($(v_F_TotalCurrentLiabilities)  - $(v_F_Affiliates_N))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0.00",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qReverseSort": true,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "mcPwTC",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Working Capital",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "($(v_WorkingCapital)) / 1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "UmHFK",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          7,
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 0,
+            "qHeight": 0
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "columnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "columnWidths": [
+          219,
+          47,
+          50,
+          44,
+          63,
+          128,
+          64,
+          95,
+          126
+        ],
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": false,
+      "title": "Ratios",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "totals": {
+        "show": false,
+        "position": "noTotals",
+        "label": "Totals"
+      },
+      "visualization": "table",
+      "qLayoutExclude": {},
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "FmEmLG",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Overheads by Category",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=[AccountCategoryDesc]\n  "
+              ],
+              "qFieldLabels": [
+                "Dimension"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "EXYmZ",
+              "othersLabel": "Others",
+              "representation": {
+                "type": "text"
+              }
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "othersLabel": "Others"
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_Actual),$(ExpensesActual_YTD)))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "Djqmyc",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "bar",
+                "axis": 0,
+                "marker": "circle",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(ExpensesBudget),$(ExpensesBudget_YTD)))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "pFwvehp",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "line",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "vs. Bud",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(ExpensesBudgetRatio)/100,$(ExpensesBudget_Ratio_YTD)/100))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "FZqpX",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if((Pick(\t$(v_Selected_Dimension_Three) ,$(ExpensesBudgetRatio)/100,$(ExpensesBudget_Ratio_YTD)/100))>1,rgb(255,0,0,),)",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Prev. Year",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_PY),$(Expenses_PY_YTD)))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "fCXX",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "vs. PY",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_PY_Ratio)/100,$(Expenses_PY_Ratio_YTD)/100))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "PjTbXrV",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if((Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_PY_Ratio)/100,$(Expenses_PY_Ratio_YTD)/100))>1,rgb(255,0,0,),)",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          0,
+          1,
+          5,
+          2,
+          3,
+          4
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 0,
+            "qHeight": 0
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "columnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "columnWidths": [
+          130,
+          74,
+          73,
+          73,
+          84,
+          75
+        ],
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": true,
+      "title": "Overheads by Category",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "totals": {
+        "show": true,
+        "position": "noTotals",
+        "label": "Totals"
+      },
+      "visualization": "table",
+      "qLayoutExclude": {},
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "JtJzGd",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Dir/Ind Overheads",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=OverheadCategory"
+              ],
+              "qFieldLabels": [
+                "Dimension"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "EXYmZ",
+              "othersLabel": "Others",
+              "representation": {
+                "type": "text"
+              }
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "othersLabel": "Others"
+          },
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=[AccountCategoryDesc]"
+              ],
+              "qFieldLabels": [
+                ""
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "YERsD",
+              "othersLabel": "Others",
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              },
+              "representation": {
+                "type": "text",
+                "urlLabel": ""
+              }
+            },
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "othersLabel": "Others"
+          },
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "ACCOUNTNUM"
+              ],
+              "qFieldLabels": [
+                ""
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "JzjJ",
+              "othersLabel": "Others"
+            },
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {
+              "qv": "Totals"
+            },
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_Actual),$(ExpensesActual_YTD)))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "Djqmyc",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "bar",
+                "axis": 0,
+                "marker": "circle",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(ExpensesBudget),$(ExpensesBudget_YTD)))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "pFwvehp",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "line",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "vs. Bud",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(ExpensesBudgetRatio)/100,$(ExpensesBudget_Ratio_YTD)/100))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "FZqpX",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if((Pick(\t$(v_Selected_Dimension_Three) ,$(ExpensesBudgetRatio)/100,$(ExpensesBudget_Ratio_YTD)/100))>1,rgb(255,0,0,),)",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Prev. Year",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_PY),$(Expenses_PY_YTD)))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "fCXX",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "vs. PY",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "=(Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_PY_Ratio)/100,$(Expenses_PY_Ratio_YTD)/100))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "Expr",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "PjTbXrV",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if((Pick(\t$(v_Selected_Dimension_Three) ,$(Expenses_PY_Ratio)/100,$(Expenses_PY_Ratio_YTD)/100))>1,rgb(255,0,0,),)",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          0,
+          1,
+          2,
+          -1
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 50,
+            "qHeight": 50
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "P",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": 3,
+        "qMaxStackedCells": 5000,
+        "qShowTotalsAbove": true,
+        "qIndentMode": true,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "columnWidths": [
+          [
+            200
+          ],
+          []
+        ],
+        "columnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": true,
+      "title": "",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "visualization": "pivot-table",
+      "qLayoutExclude": {},
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "RpFFWy",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Report IS",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "Report Category"
+              ],
+              "qFieldLabels": [
+                "in Thousands"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qReverseSort": true,
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "emfRmD",
+              "othersLabel": "Others",
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              },
+              "representation": {
+                "type": "text",
+                "urlLabel": ""
+              }
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_REL_LIMITED",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "fabs(Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount),$(R_LedgerAmount_YTD)))>0"
+              },
+              "qOtherLimitMode": "OTHER_GT_LIMIT",
+              "qSuppressOther": true,
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "ReportCategoryLineOrder"
+              ],
+              "qFieldLabels": [
+                "L"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByNumeric": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": false,
+              "cId": "hUawW",
+              "othersLabel": "Others",
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              },
+              "representation": {
+                "type": "text",
+                "urlLabel": ""
+              }
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "1"
+              },
+              "qOtherLimit": {
+                "qv": "(Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount),$(R_LedgerAmount_YTD)))>0"
+              },
+              "qOtherLimitMode": "OTHER_GT_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0),rgb(255,255,255)\n\n)))))))))))\n\n",
+                "id": "cellForegroundColor"
+              },
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount),$(R_LedgerAmount_YTD))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qReverseSort": true,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "uYbNhj",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),$(R_BudgetAmount),$(R_BudgetAmount_YTD))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "AgRWza",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Previous",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount_PY),$(R_LedgerAmount_PY_YTD))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "aKUxKY",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "vs. Bud",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),($(R_LedgerAmount)-$(R_BudgetAmount))/$(R_BudgetAmount),($(R_LedgerAmount_YTD)-$(R_BudgetAmount_YTD))/$(R_BudgetAmount_YTD))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0.0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "XFMwL",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "vs. Prv",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "\nPick($(v_Selected_Dimension_Three),($(R_LedgerAmount)-$(R_LedgerAmount_PY))/$(R_LedgerAmount_PY),($(R_LedgerAmount_YTD)-$(R_LedgerAmount_PY_YTD))/$(R_LedgerAmount_PY_YTD))\n",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "0.0%",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "UgggjaH",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(0,130,0),\nif([Report Category]='Current Assets',rgb(0,200,0),\nif([Report Category]='Non Current Assets',rgb(0,200,0),\nif([Report Category]='Current Liabilities',rgb(0,200,0),\nif([Report Category]='Non Current Liabilities',rgb(0,200,0),\nif([Report Category]='Share Holders Equity',rgb(0,200,0),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          1,
+          2,
+          0,
+          4,
+          3,
+          5,
+          6
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "columnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "columnWidths": [
+          118,
+          24,
+          90,
+          86,
+          87,
+          72,
+          84
+        ],
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": false,
+      "title": "",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "totals": {
+        "show": true,
+        "position": "noTotals",
+        "label": "Totals"
+      },
+      "visualization": "table",
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "XQGeSj",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "EBITDA Gauge",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "EBITDA",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(EBITDA_ACTUAL),$(EBITDA_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "mXWjAdL",
+              "numFormatFromTemplate": true
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          0
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "refLine": {
+        "refLines": []
+      },
+      "showTitles": false,
+      "title": "EBITDA",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "measureAxis": {
+        "min": 0,
+        "max": {
+          "qValueExpression": {
+            "qExpr": "=Pick(    $(v_Selected_Dimension_Three) ,$(EBITDA_Budget),$(EBITDA_Budget_YTD))\n"
+          }
+        },
+        "show": "all",
+        "spacing": 0.5
+      },
+      "gaugetype": "radial",
+      "autoOrientation": false,
+      "angle": 0.7,
+      "useSegments": false,
+      "color": {
+        "useBaseColors": "measure"
+      },
+      "progressColor": 3,
+      "paletteProgressColor": {
+        "index": 6
+      },
+      "valueMode": "absolute",
+      "maxSegments": 6,
+      "segmentInfo": {
+        "limits": [],
+        "colors": [
+          {
+            "color": 3
+          }
+        ],
+        "paletteColors": []
+      },
+      "disclaimerClosed": true,
+      "visualization": "gauge",
+      "orientation": "horizontal",
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "fAMZNk",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Contribution",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=[BU NAME]"
+              ],
+              "qFieldLabels": [
+                "by BU"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "adf",
+              "othersLabel": "Others"
+            },
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_Contribution),$(v_Contribution_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "fehDEHP",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "bar",
+                "axis": 0,
+                "marker": "circle",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_Contribution_Budget),$(v_Contribution_Budget_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "QbntS",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "line",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Prev. Year",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_Contribution_PY),$(v_Contribution_PY_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "AHjyPUU",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "diamond",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 17,
+            "qHeight": 500
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qAlwaysFullyExpanded": true,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "Business Unit Location"
+                  ],
+                  "qFieldLabels": [
+                    "by BU Location"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "bjavYM",
+                  "othersLabel": "Others"
+                },
+                "qNullSuppression": true,
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              },
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "Business Unit Type"
+                  ],
+                  "qFieldLabels": [
+                    "by BU Type"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "mZzjh",
+                  "othersLabel": "Others"
+                },
+                "qNullSuppression": true,
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              }
+            ],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": false,
+      "title": "Contribution",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "barGrouping": {
+        "grouping": "grouped"
+      },
+      "orientation": "vertical",
+      "scrollStartPos": 0,
+      "nullMode": "gap",
+      "dataPoint": {
+        "show": false,
+        "showLabels": false
+      },
+      "color": {
+        "auto": true,
+        "mode": "primary",
+        "useBaseColors": "off",
+        "singleColor": 3,
+        "paletteColor": {
+          "index": 6
+        },
+        "persistent": false,
+        "expressionIsColor": true,
+        "expressionLabel": "",
+        "measureScheme": "sg",
+        "reverseScheme": false,
+        "dimensionScheme": "12",
+        "autoMinMax": true,
+        "measureMin": 0,
+        "measureMax": 10
+      },
+      "legend": {
+        "show": true,
+        "dock": "top",
+        "showTitle": true
+      },
+      "dimensionAxis": {
+        "continuousAuto": true,
+        "show": "all",
+        "label": "auto",
+        "dock": "near"
+      },
+      "preferContinuousAxis": true,
+      "measureAxes": [
+        {
+          "show": "labels",
+          "dock": "near",
+          "spacing": 1,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10,
+          "logarithmic": false
+        },
+        {
+          "show": "all",
+          "dock": "far",
+          "spacing": 1,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "visualization": "combochart",
+      "measureAxis": {
+        "min": 0,
+        "max": 10
+      },
+      "qLayoutExclude": {},
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "gcJzLa",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "G_Contribution",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Contribution",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_Contribution),$(v_Contribution_YTD))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "XjBsPj",
+              "numFormatFromTemplate": true,
+              "colorizeDatapoint": false
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {}
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_Contribution_Budget),$(v_Contribution_Budget_YTD))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "sphb",
+              "numFormatFromTemplate": true,
+              "colorizeDatapoint": false
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {}
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          0,
+          1
+        ],
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 2,
+            "qHeight": 5000
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "props": {
+        "target": {
+          "mode": true,
+          "comparison": "relative",
+          "precision": 1,
+          "comparisonType": "more_is_better",
+          "banding": 0,
+          "targetBandingHelpText": "",
+          "layout": {
+            "mode": "comparison"
+          },
+          "comparisonLabel": "",
+          "icon": "arrow-circle-o-up"
+        },
+        "canTakeSnapshot": true,
+        "layout": {
+          "mode": "fill",
+          "marginType": "none",
+          "textSize": "large",
+          "boldText": true,
+          "color": {
+            "mode": false
+          }
+        },
+        "kpiAlign": "middle",
+        "hideKpiLabel": false,
+        "kpiLabel": "",
+        "hideTargetLabel": true,
+        "targetLabel": "",
+        "backgroundImageMode": "none",
+        "backgroundContentLibraryImage": "",
+        "backgroundImageURL": "",
+        "backgroundImageSizeMode": "contain",
+        "showIconWithTitle": false,
+        "iconSet": "navigation",
+        "icon": "arrow-circle-up",
+        "color": {
+          "target": {
+            "mode": "3-colors"
+          },
+          "customColors": {
+            "good": {
+              "color": "#46c646",
+              "index": 2
+            },
+            "goodEnough": {
+              "color": "#ffcf02",
+              "index": 8
+            },
+            "bad": {
+              "color": "#f93f17",
+              "index": 10
+            },
+            "icon": {
+              "color": "#4477aa",
+              "index": 6
+            },
+            "trend": {
+              "color": "#4477aa",
+              "index": 6
+            },
+            "targetTrend": {
+              "color": "#545352",
+              "index": 14
+            },
+            "text": {
+              "color": "#7b7a78",
+              "index": 13
+            },
+            "background": {
+              "color": "#4477aa",
+              "index": 6
+            }
+          },
+          "colorExpressions": {
+            "target": "RGB(0, 0, 128)",
+            "icon": "RGB(0, 0, 128)",
+            "trend": "RGB(128, 128, 200)",
+            "targetTrend": "RGB(128, 128, 200)",
+            "text": "RGB(128, 128, 128)",
+            "background": "RGB(0, 0, 128)"
+          },
+          "icon": {
+            "mode": "custom"
+          },
+          "trend": {
+            "iconIndependence": false,
+            "mode": "auto",
+            "autoblend": true,
+            "blendFactor": 0.3
+          },
+          "targetTrend": {
+            "autoblend": true,
+            "blendFactor": 0.3
+          },
+          "other": {
+            "mode": "custom"
+          },
+          "overlay": {
+            "navigationColor": {
+              "color": "#ffffff",
+              "index": 1
+            },
+            "bgcolor": {
+              "color": "#545352",
+              "index": 14
+            },
+            "opacity": 0.7
+          }
+        },
+        "iconDirectionExpression": 0,
+        "hoverMode": "none",
+        "sheetId": "jvQxZw",
+        "actionBeforeNavigation": "none",
+        "field": "",
+        "value": "",
+        "values": "",
+        "valuesSeparatorComma": true,
+        "valuesSeparatorCustom": ",",
+        "variable": "",
+        "variableValue": "",
+        "navigation": {
+          "text": "Go To Expenses",
+          "showButton": true
+        }
+      },
+      "showTitles": false,
+      "title": "",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "visualization": "cl-kpi",
+      "createdWithVersion": "1.1.0",
+      "propertiesVersion": "1.1.0",
+      "version": "1.1.0",
+      "extensionMeta": {
+        "name": "Climber KPI",
+        "description": "KPI Tile",
+        "icon": "kpi",
+        "type": "visualization",
+        "version": "1.1.0",
+        "preview": "climberkpi.png",
+        "author": "Karl Fredberg Sjöstrand",
+        "dependencies": {
+          "qlik-sense": ">=3.2.x"
+        },
+        "previewIconURL": "../extensions/cl-kpi/climberkpi.png",
+        "template": "cl-kpi",
+        "isLibraryItem": true,
+        "isThirdParty": true,
+        "templateIconClassName": "icon-kpi"
+      },
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "kbYWF",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Report_BS_Short",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "Report Category"
+              ],
+              "qFieldLabels": [
+                "in Thousands"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qReverseSort": true,
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "emfRmD",
+              "othersLabel": "Others",
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              },
+              "representation": {
+                "type": "text",
+                "urlLabel": ""
+              }
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_REL_LIMITED",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "fabs(Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount),$(R_LedgerAmount_YTD)))>0"
+              },
+              "qOtherLimitMode": "OTHER_GT_LIMIT",
+              "qSuppressOther": true,
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=if(ReportCategoryLineOrder='009-1','009.1',ReportCategoryLineOrder)"
+              ],
+              "qFieldLabels": [
+                "L"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByNumeric": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": false,
+              "cId": "hUawW",
+              "othersLabel": "Others",
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              },
+              "representation": {
+                "type": "text",
+                "urlLabel": ""
+              }
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "1"
+              },
+              "qOtherLimit": {
+                "qv": "(Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount),$(R_LedgerAmount_YTD)))>0"
+              },
+              "qOtherLimitMode": "OTHER_GT_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(0,130,0),rgb(255,255,255)\n\n)))))))))))\n\n",
+                "id": "cellForegroundColor"
+              },
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount_BS),$(R_LedgerAmount_BS_YTD))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qReverseSort": true,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "uYbNhj",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "31-Dec",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),$(R_LedgerAmount_BS_PY),$(R_LedgerAmount_BS_PY_YTD))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "aKUxKY",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Sources",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "if( \n[Report Category] = 'Trade Receivables'  or\n[Report Category] = 'Other Receivables'  or\n[Report Category] = 'Cash & Banks'   or\n[Report Category] = 'Inventories'   or\n[Report Category] = 'Prep. exp & Others'   or\n[Report Category] = 'Current Assets'   or\n[Report Category] = 'Fixed Assets At Cost'   or\n[Report Category] = 'Depreciations'   or\n[Report Category] = 'Non Current Assets'   or\n[Report Category] = 'Total Assets'  \n,$(R_Sources),$(R_Uses))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "PJGJp",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Uses",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "if( \n[Report Category] = 'Trade Receivables'  or\n[Report Category] = 'Other Receivables'  or\n[Report Category] = 'Cash & Banks'   or\n[Report Category] = 'Inventories'   or\n[Report Category] = 'Prep. exp & Others'   or\n[Report Category] = 'Current Assets'   or\n[Report Category] = 'Fixed Assets At Cost'   or\n[Report Category] = 'Depreciations'   or\n[Report Category] = 'Non Current Assets'   or\n[Report Category] = 'Total Assets'  \n,$(R_Uses),$(R_Sources))",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "XspPNTa",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick($(v_Selected_Dimension_Three),$(R_BudgetAmount_BS),$(R_BudgetAmount_BS_YTD))/1000",
+              "qNumFormat": {
+                "qType": "F",
+                "qnDec": 2,
+                "qUseThou": 0,
+                "qFmt": "#,##0",
+                "qDec": ".",
+                "qThou": ","
+              },
+              "qAggrFunc": "None",
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "AgRWza",
+              "numFormatFromTemplate": true,
+              "textAlign": {
+                "auto": true,
+                "align": "left"
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "if(\n[Report Category]='EBT',rgb(114, 144, 193),\nif([Report Category]='EBITDA',rgb(114, 144, 193),if([Report Category]='Net Sales',rgb(229, 224, 183),if([Report Category]='Contribution',\nrgb(249, 245, 207),if([Report Category]='Total Assets',rgb(114, 144, 193),\nif([Report Category]='Current Assets',rgb(229, 224, 183),\nif([Report Category]='Non Current Assets',rgb(229, 224, 183),\nif([Report Category]='Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Non Current Liabilities',rgb(229, 224, 183),\nif([Report Category]='Share Holders Equity',rgb(229, 224, 183),\nif([Report Category]='Total Liabilities & SHE',rgb(114, 144, 193)\n\n)))))))))))\n",
+                "id": "cellBackgroundColor"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          1,
+          2,
+          0,
+          3,
+          6,
+          4,
+          5
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "columnOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "columnWidths": [
+          220,
+          34,
+          88,
+          104,
+          139,
+          123,
+          92
+        ],
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": false,
+      "title": "",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "totals": {
+        "show": true,
+        "position": "noTotals",
+        "label": "Totals"
+      },
+      "visualization": "table",
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "pxGay",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Year",
+        "description": "Year",
+        "tags": [
+          "QSMenu"
+        ]
+      },
+      "qChildListDef": {
+        "qData": {
+          "info": "/qInfo"
+        }
+      },
+      "showTitles": false,
+      "title": "",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "visualization": "filterpane",
+      "masterVersion": 0.96
+    },
+    "qChildren": [
+      {
+        "qProperty": {
+          "qInfo": {
+            "qId": "e8d34050-ea2d-426e-be00-6cd17ce17923",
+            "qType": "listbox"
+          },
+          "qMetaDef": {},
+          "qListObjectDef": {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "Year"
+              ],
+              "qFieldLabels": [
+                ""
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByState": 1,
+                  "qSortByNumeric": 1,
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "pPmDDcG"
+            },
+            "qFrequencyMode": "N",
+            "qShowAlternatives": true,
+            "qInitialDataFetch": [],
+            "qExpressions": [],
+            "qOtherTotalSpec": {}
+          },
+          "showTitles": true,
+          "title": "Year",
+          "subtitle": "",
+          "footnote": "",
+          "showDetails": false,
+          "visualization": "listbox"
+        },
+        "qChildren": []
+      }
+    ]
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "qFP",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Net Sales",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "BU NAME"
+              ],
+              "qFieldLabels": [
+                "by BU"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByNumeric": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "SWAPps",
+              "othersLabel": "Others"
+            },
+            "qNullSuppression": true,
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "0"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Actual",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_Net_Sales),$(v_Net_Sales_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "ZKnTNPn",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "bar",
+                "axis": 0,
+                "marker": "circle",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Budget",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_NetSales_Budget),$(v_NetSales_Budget_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "AdJSu",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "line",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          },
+          {
+            "qDef": {
+              "qLabel": "Previous Y",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) ,$(v_NetSales_PY),$(v_NetSales_PY_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "RwPEKm",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "marker",
+                "axis": 0,
+                "marker": "diamond",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 17,
+            "qHeight": 500
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "Business Unit Location"
+                  ],
+                  "qFieldLabels": [
+                    "by BU Location"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "jsuMrF",
+                  "othersLabel": "Others"
+                },
+                "qNullSuppression": true,
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              },
+              {
+                "qDef": {
+                  "qGrouping": "N",
+                  "qFieldDefs": [
+                    "Business Unit Type"
+                  ],
+                  "qFieldLabels": [
+                    "by BU Type"
+                  ],
+                  "qSortCriterias": [
+                    {
+                      "qSortByLoadOrder": 1,
+                      "qExpression": {}
+                    }
+                  ],
+                  "qNumberPresentations": [],
+                  "qActiveField": 0,
+                  "autoSort": true,
+                  "cId": "JcKUbWr",
+                  "othersLabel": "Others"
+                },
+                "qNullSuppression": true,
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {
+                    "qv": "10"
+                  },
+                  "qOtherLimit": {
+                    "qv": "0"
+                  },
+                  "qOtherLimitMode": "OTHER_GE_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qOtherLabel": {
+                  "qv": "Others"
+                },
+                "qTotalLabel": {},
+                "qCalcCond": {},
+                "qAttributeExpressions": [],
+                "qAttributeDimensions": [],
+                "qCalcCondition": {
+                  "qCond": {},
+                  "qMsg": {}
+                }
+              }
+            ],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "showTitles": false,
+      "title": "Net Sales",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "barGrouping": {
+        "grouping": "grouped"
+      },
+      "orientation": "vertical",
+      "scrollStartPos": 0,
+      "nullMode": "gap",
+      "dataPoint": {
+        "show": false
+      },
+      "color": {
+        "auto": true,
+        "mode": "primary",
+        "useBaseColors": "off",
+        "singleColor": 3,
+        "paletteColor": {
+          "index": 6
+        },
+        "persistent": false,
+        "expressionIsColor": true,
+        "expressionLabel": "",
+        "measureScheme": "sg",
+        "reverseScheme": false,
+        "dimensionScheme": "12",
+        "autoMinMax": true,
+        "measureMin": 0,
+        "measureMax": 10
+      },
+      "legend": {
+        "show": false,
+        "dock": "auto",
+        "showTitle": true
+      },
+      "dimensionAxis": {
+        "continuousAuto": true,
+        "show": "all",
+        "label": "auto",
+        "dock": "near"
+      },
+      "preferContinuousAxis": true,
+      "measureAxes": [
+        {
+          "show": "labels",
+          "dock": "near",
+          "spacing": 0.5,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "show": "all",
+          "dock": "far",
+          "spacing": 1,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "visualization": "combochart",
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  },
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "qLFmmD",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Contribution Gauge",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Contribution",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick(    $(v_Selected_Dimension_Three) , $(v_Contribution),$(v_Contribution_YTD))",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "mXWjAdL",
+              "numFormatFromTemplate": true
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qInterColumnSortOrder": [
+          0
+        ],
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [],
+        "customErrorMessage": {
+          "calcCond": ""
+        },
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": []
+          }
+        }
+      },
+      "refLine": {
+        "refLines": []
+      },
+      "showTitles": false,
+      "title": "Contribution",
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "measureAxis": {
+        "min": 0,
+        "max": {
+          "qValueExpression": {
+            "qExpr": "=Pick(    $(v_Selected_Dimension_Three) ,$(v_Contribution_Budget),$(v_Contribution_Budget_YTD))"
+          }
+        },
+        "show": "all",
+        "spacing": 0.5
+      },
+      "gaugetype": "radial",
+      "autoOrientation": false,
+      "orientation": "horizontal",
+      "angle": 0.7,
+      "useSegments": false,
+      "color": {
+        "useBaseColors": "measure"
+      },
+      "progressColor": 3,
+      "paletteProgressColor": {
+        "index": 6
+      },
+      "valueMode": "absolute",
+      "maxSegments": 6,
+      "segmentInfo": {
+        "limits": [],
+        "colors": [
+          {
+            "color": 3
+          }
+        ],
+        "paletteColors": []
+      },
+      "disclaimerClosed": true,
+      "visualization": "gauge",
+      "masterVersion": 0.96,
+      "metadata": {}
+    },
+    "qChildren": []
+  }
+]
